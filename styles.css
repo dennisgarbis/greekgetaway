@@ -2,6 +2,7 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0;
+    text-align: center;
 }
 
 #wrapper {
@@ -36,6 +37,12 @@ nav {
     background-size: 100%;
     background-position: center;
     padding: 20%;
+    /* background: url("images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;*/
 }
 
 #nav-flex {
@@ -52,12 +59,9 @@ nav {
     margin-left: 5%;
 }
 
-
-
 .nav-links {
     display: flex;
-    padding: 10px 20px;
-
+    margin: 0rem .8rem;
 }
 
 nav li {
@@ -67,7 +71,8 @@ nav li {
 nav li a {
     color: black;
     text-decoration: none;
-    padding: 5px 30px;
+    margin: 0rem 2.5rem;
+    padding: .5rem 1rem;
 }
 
 nav a:hover {
@@ -76,13 +81,8 @@ nav a:hover {
     border-radius: 10px;
 }
 
-#hero {
-    text-align: center;
-}
-
 #slogan {
     color: darkblue;
-    text-align: center;
     margin-left: auto;
     margin-right: auto;
     width: 40%;
@@ -100,7 +100,6 @@ nav a:hover {
 }
 
 #hero-button {
-    text-align: center;
     background-color: rgb(62, 65, 211);
     color: white;
     text-decoration: none;
@@ -114,9 +113,183 @@ nav a:hover {
     border: thin solid blue;
 }
 
+#intro {
+    display: flex;
+    background-color: lightcyan;
+    padding: 2rem;
+}
+
+#intro-left {
+    display: flex;
+    width: 50%;
+}
+
+#map {
+    width: auto;
+    height: auto;
+}
+
+#about-map {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+
+#about-map>h2 {
+    margin-bottom: 1rem;
+}
+
+#about-map>p {
+    text-align: left;
+}
+
+#intro-right {
+    width: 50%;
+}
+
+#intro-right>h2 {
+    margin-bottom: 1rem;
+}
+
+#tour-list {
+    background-color: lightsteelblue;
+    padding: 2rem;
+}
+
+#tour-list>p {
+    width: 40%;
+    text-align: left;
+    margin: auto;
+}
+
+#tour-list-flex {
+    display: flex;
+}
+
+#itinerary {
+    width: 50%;
+}
+
+#table {
+    border-collapse: collapse;
+    margin: auto;
+    width: 70%
+}
+
+caption {
+    margin-top: 25px;
+    font-weight: bold;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 10px;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.todo {
+    width: 60%;
+}
+
+#carousel {
+    width: 50%;
+}
+
+#carousel>p {
+    width: 40%;
+    text-align: left;
+    margin: auto;
+}
+
+#testimonials {
+    background-color: lightgreen;
+    padding: 2rem;
+}
+
+#faq {
+    background-color: lightpink;
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
 footer {
     background-color: black;
-    text-align: center;
     color: white;
     padding: 20px;
+}
+
+@media screen and (max-width: 900px) {
+    #wrapper {
+        text-align: center;
+    }
+
+    #slogan {
+        width: 90%;
+    }
+
+    #site-title {
+        font-size: 1.5rem;
+    }
+
+    .nav-links {
+        flex-direction: column;
+    }
+
+    #intro {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #intro-left {
+        flex-direction: column;
+        width: 90%;
+        margin: auto;
+    }
+
+    #mapGreece {
+        width: 80%;
+    }
+
+    #intro-right {
+        margin: auto;
+        width: 90%;
+    }
+
+    #tour-list>p {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    #table {
+        width: 100%;
+        padding: 0%;
+        margin: auto;
+    }
+
+    #itinerary {
+        width: 90%;
+        margin: auto;
+    }
+
+    #tour-list-flex {
+        flex-direction: column;
+        margin: auto;
+    }
+
+    #carousel {
+        width: 90%;
+        margin: auto;
+    }
+
+    #carousel>p {
+        width: 90%;
+    }
+
 }
