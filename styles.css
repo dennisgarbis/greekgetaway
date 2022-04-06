@@ -5,14 +5,13 @@
 }
 
 #wrapper {
-    width: 95%;
     margin-right: auto;
     margin-left: auto;
 }
 
 #skip {
     position: absolute;
-    transform: translateY(-100%);
+    transform: translateY(-300%);
     transition: transform 300ms ease-in;
 }
 
@@ -23,21 +22,42 @@
     transform: translateY(0%);
 }
 
+nav {
+    display: flex;
+    margin-right: 5%;
+}
+
 #navigation {
     display: none;
 }
 
-nav {
-    background-color: darkblue;
+#hero {
+    background: url("images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20%;
+}
+
+#nav-flex {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
     position: -webkit-sticky;
+    top: 0%;
     position: sticky;
 }
 
+#logo {
+    margin-left: 5%;
+}
+
+
+
 .nav-links {
     display: flex;
-    justify-content: space-around;
     padding: 10px 20px;
-margin-left: 30%;
+
 }
 
 nav li {
@@ -45,15 +65,53 @@ nav li {
 }
 
 nav li a {
-    color: white;
+    color: black;
     text-decoration: none;
     padding: 5px 30px;
 }
 
 nav a:hover {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     border-radius: 10px;
+}
+
+#hero {
+    text-align: center;
+}
+
+#slogan {
+    color: darkblue;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+}
+
+#site-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+#button {
+    margin: auto;
+    margin-top: 1.2rem;
+
+}
+
+#hero-button {
+    text-align: center;
+    background-color: rgb(62, 65, 211);
+    color: white;
+    text-decoration: none;
+    padding: .5rem 1.2rem;
+    border-radius: 30px;
+    margin: auto;
+}
+
+#hero-button:hover {
+    background-color: rgba(62, 64, 211, 0.695);
+    border: thin solid blue;
 }
 
 footer {
