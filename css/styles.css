@@ -46,10 +46,11 @@ nav {
     margin-left: 5%;
 }
 
-#logo > img {
+#logo>img {
     margin: 0rem;
     margin-bottom: 0%;
 }
+
 .nav-links {
     display: flex;
 }
@@ -104,17 +105,30 @@ nav a:hover {
 }
 
 #hero-button {
-    background-color: rgb(62, 65, 211);
+    background-color: darkblue;
     color: white;
     text-decoration: none;
-    padding: .5rem 1.2rem;
+    padding: .5rem 1.1rem;
     border-radius: 30px;
-    margin: auto;
+    box-shadow: 2px 3px rgba(84, 80, 80, 0.386)
 }
 
 #hero-button:hover {
-    background-color: rgba(62, 64, 211, 0.695);
+    background-color: white;
     border: thin solid blue;
+    color: blue;
+    transition-duration: .5s;
+}
+
+#button:active {
+    transform:translateY(2px);
+    transition-duration: .2s;
+}
+
+#hero-button:active {
+    box-shadow: none;
+    transition-duration: 0s;
+
 }
 
 #intro {
@@ -244,10 +258,10 @@ footer {
         display: flex;
         justify-content: center;
     }
-    
-.flex-center {
-    margin-top: 1.5rem;
-}
+
+    .flex-center {
+        margin-top: 1.5rem;
+    }
 
     #site-title {
         font-size: 1.5rem;
@@ -258,14 +272,17 @@ footer {
         text-align: center;
         margin-top: 1.5rem;
         font-size: .8rem;
+        
     }
 
     #logo {
         margin-left: 1%;
     }
-    #logo > img {
+
+    #logo>img {
         width: 80%;
     }
+
     .nav-links {
         margin: .5rem auto;
         width: 100%;
