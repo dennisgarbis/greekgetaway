@@ -127,7 +127,7 @@ figure>img {
     display: flex;
     flex-wrap: wrap;
     width: 200px;
-    border: thin solid red;
+    border: thin solid black;
     border-radius: 10px;
     -webkit-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;

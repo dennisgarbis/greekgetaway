@@ -46,10 +46,11 @@ nav {
     margin-left: 5%;
 }
 
-#logo > img {
+#logo>img {
     margin: 0rem;
     margin-bottom: 0%;
 }
+
 .nav-links {
     display: flex;
 }

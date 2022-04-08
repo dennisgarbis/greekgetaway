@@ -121,7 +121,7 @@ nav a:hover {
 }
 
 #button:active {
-    transform: translateY(2px);
+    transform:translateY(2px);
     transition-duration: .2s;
 }
 
@@ -279,7 +279,6 @@ footer {
         padding-left: .5rem;
         padding-right: .5rem;
     }
-
     #logo {
         margin-left: 1%;
     }
