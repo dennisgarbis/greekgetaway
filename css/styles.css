@@ -110,7 +110,7 @@ nav a:hover {
     text-decoration: none;
     padding: .5rem 1.1rem;
     border-radius: 30px;
-    box-shadow: 2px 3px rgba(84, 80, 80, 0.386)
+    box-shadow: 2px 3px rgba(84, 80, 80, 0.386);
 }
 
 #hero-button:hover {

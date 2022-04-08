@@ -78,35 +78,33 @@ nav a:hover {
     height: auto;
 }
 
-.row {
-    display: flex;
-    flex-wrap: wrap;
-    background-color: lightblue;
-    padding: 2rem;
-}
-
-figure>img {
-    display: flex;
-    flex: wrap;
-    height: 400px;
-    object-fit: cover;
-}
-
-
 .gallery {
-    position: relative;
     z-index: 2;
-    padding: 10px;
+    padding: 2rem;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-flow: row wrap;
-    flex-flow: row wrap;
+    flex-wrap: wrap;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
     -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: lightblue;
+    border-radius: 30px;
+    padding: 2rem;
+}
+
+figure>img {
+    display: flex;
+    height: 300px;
+    margin: auto;
 }
 
 .gallery.pop {
@@ -116,8 +114,8 @@ figure>img {
 
 .gallery figure {
     -ms-flex-preferred-size: 33.333%;
-    flex-basis: 33.333%;
-    padding: 10px;
+    position: relative;
+    margin: 2rem;
     overflow: hidden;
     border-radius: 10px;
     cursor: pointer;
@@ -126,11 +124,19 @@ figure>img {
 .gallery figure img {
     display: flex;
     flex-wrap: wrap;
-    width: 200px;
+    width: 18rem;
     border: thin solid black;
     border-radius: 10px;
-    -webkit-transition: all .3s ease-in-out;
-    transition: all .3s ease-in-out;
+}
+
+.gallery figure .caption {
+    opacity: 0;
+    font-size: 1.5rem;
+    position: absolute;
+    width: 18rem;
+    top: 0%;
+    color: black;
+    text-align: center;
 }
 
 .gallery figure img:hover {
@@ -141,6 +147,12 @@ figure>img {
     transition-duration: .3s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
+    opacity: 0.7;
+}
+
+.gallery figure:hover .caption {
+    background-color: rgba(255, 255, 255, 0.6);
+    opacity: 1;
 }
 
 .gallery figure figcaption {
@@ -216,6 +228,10 @@ figure>img {
     text-indent: 3px;
     opacity: .9;
     letter-spacing: 1px;
+}
+
+.popup figure figcaption .xsmall {
+    font-size: .5rem;
 }
 
 .popup figure .shadow {
