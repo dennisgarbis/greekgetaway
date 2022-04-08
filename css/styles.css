@@ -32,19 +32,6 @@ nav {
     display: none;
 }
 
-#hero {
-    background: url("images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
-    background-size: 100%;
-    background-position: center;
-    padding: 20%;
-    /* background: url("images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
-    background-size: contain;
-    width: 100%;
-    height: 400px;
-    background-position: center;
-    background-repeat: no-repeat;*/
-}
-
 #nav-flex {
     display: flex;
     align-items: center;
@@ -59,9 +46,16 @@ nav {
     margin-left: 5%;
 }
 
+#logo > img {
+    margin: 0rem;
+    margin-bottom: 0%;
+}
 .nav-links {
     display: flex;
-    margin: 0rem .8rem;
+}
+
+#active {
+    border-bottom: 2px solid red;
 }
 
 nav li {
@@ -71,14 +65,24 @@ nav li {
 nav li a {
     color: black;
     text-decoration: none;
-    margin: 0rem 2.5rem;
-    padding: .5rem 1rem;
+    margin: 0rem 4.5rem;
 }
 
 nav a:hover {
-    background-color: black;
-    color: white;
-    border-radius: 10px;
+    border-bottom: 2px solid blue;
+}
+
+#hero {
+    background: url("../images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
+    background-size: 100%;
+    background-position: center;
+    padding: 20%;
+    /* background: url("images/johnny-africa-_ZX0S27D3fw-unsplash.jpg");
+    background-size: contain;
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;*/
 }
 
 #slogan {
@@ -96,7 +100,6 @@ nav a:hover {
 #button {
     margin: auto;
     margin-top: 1.2rem;
-
 }
 
 #hero-button {
@@ -116,7 +119,7 @@ nav a:hover {
 #intro {
     display: flex;
     background-color: lightcyan;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 #intro-left {
@@ -152,7 +155,7 @@ nav a:hover {
 
 #tour-list {
     background-color: lightsteelblue;
-    padding: 2rem;
+    padding: 4rem;
 }
 
 #tour-list>p {
@@ -203,8 +206,8 @@ td, th {
 }
 
 #testimonials {
-    background-color: lightgreen;
     padding: 2rem;
+    background-color: #073161;
 }
 
 #faq {
@@ -238,8 +241,25 @@ footer {
         font-size: 1.5rem;
     }
 
+    #logo {
+        margin-left: 1%;
+    }
+    #logo > img {
+        width: 80%;
+    }
     .nav-links {
-        flex-direction: column;
+        margin: .5rem auto;
+        width: 100%;
+    }
+
+    .nav-links>li>a {
+        padding: 0%;
+        margin: 0 .5rem;
+    }
+
+    .nav-links>li>a:hover {
+        text-decoration: solid;
+        text-decoration-color: blue;
     }
 
     #intro {
