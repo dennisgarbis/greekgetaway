@@ -121,7 +121,7 @@ nav a:hover {
 }
 
 #button:active {
-    transform:translateY(2px);
+    transform: translateY(2px);
     transition-duration: .2s;
 }
 
@@ -139,17 +139,8 @@ nav a:hover {
 
 #intro-left {
     display: flex;
+    flex-direction: column;
     width: 50%;
-}
-
-#map {
-    width: auto;
-    height: auto;
-}
-
-#about-map {
-    margin-right: 2rem;
-    margin-left: 2rem;
 }
 
 #about-map>h2 {
@@ -158,14 +149,29 @@ nav a:hover {
 
 #about-map>p {
     text-align: left;
+    margin: 0 auto 1rem auto;
+    width: 70%;
 }
 
 #intro-right {
     width: 50%;
 }
 
+#mapGreece {
+    width: 50%;
+}
+
 #intro-right>h2 {
+    margin-bottom: .1rem;
+}
+
+.sub-p {
+    font-style: italic;
     margin-bottom: 1rem;
+}
+
+.greek-vid {
+    padding: 0 4rem 4rem 4rem;
 }
 
 #tour-list {
@@ -284,6 +290,7 @@ footer {
         padding-left: .5rem;
         padding-right: .5rem;
     }
+
     #logo {
         margin-left: 1%;
     }
@@ -323,8 +330,12 @@ footer {
     }
 
     #intro-right {
-        margin: auto;
+        margin: 1rem auto 0;
         width: 90%;
+    }
+
+    .greek-vid {
+        padding: 0;
     }
 
     #tour-list>p {

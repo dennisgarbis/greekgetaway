@@ -29,8 +29,10 @@
                     </ul>
                 </nav>
             </div>
-            <section id="hero"><!-- flex area -->
-                <div class="flex-center"><!-- flex item (only one)-->
+            <section id="hero">
+                <!-- flex area -->
+                <div class="flex-center">
+                    <!-- flex item (only one)-->
                     <div id="slogan">
                         <h1 id="site-title">GREEK<br>GETAWAY</h1>
                     </div>
@@ -43,9 +45,6 @@
         <main>
             <section id="intro">
                 <div id="intro-left">
-                    <div id="map">
-                        <img id="mapGreece" src="images/map-greece.jpg" alt="">
-                    </div>
                     <div id="about-map">
                         <h2>Greece</h2>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate ex cum animi consectetur
@@ -56,10 +55,20 @@
                             nihil.
                             Unde qui optio accusamus facere!.</p>
                     </div>
+                    <div id="map">
+                        <img id="mapGreece" src="images/map-update.jpg" alt="">
+                    </div>
                 </div>
                 <div id="intro-right">
-                    <h2>Video</h2>
-                    <p>A VIDEO WILL BE PLAYING HERE</p>
+                    <h2>Greece Highlights</h2>
+                    <p class="sub-p">Brought to you in 4k</p>
+
+                    <div id="highlights">
+                        <iframe width="560" height="315" class="greek-vid" src="https://www.youtube.com/embed/RSRKFAmfqnI?autoplay=1?"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen></iframe>
+                    </div>
                 </div>
             </section>
             <section id="tour-list">
@@ -217,7 +226,7 @@
             </section>
             <section id="faq">
                 <h2>FAQ</h2>
-               
+
             </section>
         </main>
         <footer>
@@ -231,6 +240,7 @@
     <script src="js/owl-carousel.js"></script>
     <!-- Custom Script -->
     <script src="js/script.js"></script>
+    <script src="js/fluidify.js"></script>
 </body>
 
 </html>
