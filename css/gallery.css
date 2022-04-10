@@ -81,15 +81,9 @@ nav a:hover {
 .gallery {
     z-index: 2;
     padding: 2rem;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-flow: row wrap;
     flex-wrap: wrap;
-    -webkit-box-pack: justify;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -webkit-transition: all .5s ease-in-out;
     transition: all .5s ease-in-out;
 }
 
@@ -99,6 +93,10 @@ nav a:hover {
     background-color: lightblue;
     border-radius: 30px;
     padding: 2rem;
+}
+
+.gallery .row {
+    justify-content: center;
 }
 
 figure>img {
@@ -170,19 +168,18 @@ figure>img {
     height: 100%;
     background: rgba(61, 61, 61, 0.447);
     opacity: 0;
-    -webkit-transition: opacity .5s ease-in-out .2s;
     transition: opacity .5s ease-in-out .2s;
 }
 
 .popup.pop {
     opacity: 1;
-    -webkit-transition: opacity .2s ease-in-out 0s;
     transition: opacity .2s ease-in-out 0s;
 }
 
 .popup.pop figure {
     margin-top: 0;
     opacity: 1;
+    margin-left: 125px;
 }
 
 .popup figure {
@@ -650,6 +647,8 @@ footer {
         text-decoration-color: blue;
     }
 
-
+    /* .popup.pop figure { */
+        /* margin-left: 125px; */
+   
 
 }
