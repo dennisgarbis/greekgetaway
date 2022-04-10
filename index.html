@@ -15,21 +15,22 @@
 
 <body>
     <div id="wrapper">
-        <header>
-            <a id="skip" href="#hero-button">skip to content..</a>
-            <div id="nav-flex">
-                <a href="index.html" id="logo"><img src="images/gg-logo2.jpg" alt="greek getaway logo"></a>
-                <nav aria-label="navigation">
-                    <h2 id="navigation">Links</h2>
-                    <ul class="nav-links">
-                        <li><a id="active">Home</a></li>
-                        <li><a href="destinations.html">Destinations</a></li>
-                        <li><a href="gallery.html">Gallery</a></li>
-                        <li><a href="about.html">About Us</a></li>
-                    </ul>
-                </nav>
-            </div>
-            <section id="hero">
+        <div id="nav-flex">
+            <a href="index.html" id="logo"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
+            <nav aria-label="navigation">
+                <h2 id="navigation">Links</h2>
+                <ul class="nav-links">
+                    <li><a id="active">Home</a></li>
+                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+            </nav>
+        </div>
+        <section id="hero">
+            <header>
+                <a id="skip" href="#hero-button">skip to content..</a>
+                
                 <!-- flex area -->
                 <div class="flex-center">
                     <!-- flex item (only one)-->
@@ -40,8 +41,8 @@
                         <a id="hero-button" href="#">Plan Your Trip</a>
                     </div>
                 </div>
-            </section>
-        </header>
+            </header>
+        </section>
         <main>
             <section id="intro">
                 <div id="intro-left">
@@ -64,7 +65,7 @@
                     <p class="sub-p">Brought to you in 4k</p>
 
                     <div id="highlights">
-                        <iframe class="greek-vid" src="https://www.youtube.com/embed/RSRKFAmfqnI?autoplay=1"
+                        <iframe class="greek-vid" src="https://www.youtube.com/embed/RSRKFAmfqnI"
                             title="YouTube video player" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
@@ -129,8 +130,8 @@
                     <div class="owl-carousel owl-theme membership-include">
                         <div class="item"
                             style="background-image: url(img/icon_01.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
-                            <div class="left"
-                                style="background-image: url(img/kefalonia.jpg); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+                            <div class="left">
+                                <img src="img/corinth.jpg" alt="">
                             </div>
                             <div class="right">
                                 <h3>Great time had by all!</h3><br>
@@ -147,9 +148,9 @@
                         </div>
                         <div class="item"
                             style="background-image: url(img/icon_02.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
-                            <div class="left"
-                                style="background-image: url(img/nafplio.jpg); background-repeat: no-repeat; background-position: right center; background-size: cover;">
-                            </div>
+                            <div class="left">
+                            <img src="img/corinth.jpg" alt="">
+                        </div>
                             <div class="right">
                                 <h3>We love coming to Greece.</h3><br>
                                 <div class="image">
@@ -166,8 +167,8 @@
                         </div>
                         <div class="item"
                             style="background-image: url(img/icon_02.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
-                            <div class="left"
-                                style="background-image: url(img/corinth.jpg); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+                            <div class="left">
+                                <img src="img/corinth.jpg" alt="">
                             </div>
                             <div class="right">
                                 <h3>I love the sunny weather</h3><br>
@@ -185,8 +186,8 @@
                         </div>
                         <div class="item"
                             style="background-image: url(img/icon_03.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
-                            <div class="left"
-                                style="background-image: url(img/sant.jpg); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+                            <div class="left">
+                                <img src="img/corinth.jpg" alt="">
                             </div>
                             <div class="right">
                                 <h3>Was not expensive at all!!</h3><br>
@@ -206,8 +207,8 @@
                         </div>
                         <div class="item"
                             style="background-image: url(img/icon_03.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
-                            <div class="left"
-                                style="background-image: url(img/acropolis.jpg); background-repeat: no-repeat; background-position: right center; background-size: cover;">
+                            <div class="left">
+                                <img src="img/corinth.jpg" alt="">
                             </div>
                             <div class="right">
                                 <h3>I don't know what to say!</h3><br>
@@ -238,7 +239,8 @@
         </footer>
     </div><!-- end of wrapper -->
     <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <!-- OWL Carousel JS -->
     <script src="js/owl-carousel.js"></script>
     <!-- Custom Script -->
