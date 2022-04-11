@@ -15,6 +15,7 @@
 
 <body>
     <div id="wrapper">
+        <div id="top"></div>
         <div id="nav-flex">
             <a href="index.html" id="logo"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
             <nav aria-label="navigation">
@@ -23,14 +24,19 @@
                     <li><a id="active">Home</a></li>
                     <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about.html">About</a></li>
+                    <li><a href="about.html">About</a>
+                        <ul>
+                            <li><a href="about-us.html">About Us</a></li>
+                            <li><a href="contact-us.html">Contact Us</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
         <section id="hero">
             <header>
                 <a id="skip" href="#hero-button">skip to content..</a>
-                
+
                 <!-- flex area -->
                 <div class="flex-center">
                     <!-- flex item (only one)-->
@@ -72,6 +78,15 @@
                     </div>
                 </div>
             </section>
+            <a href="#top" id="backtothetop-fixed" 
+                data-backtothetop-duration="1000"
+                data-backtothetop-fixed-scroll-offset="700"
+                data-backtothetop-fixed-fadeIn="1500" 
+                data-backtothetop-fixed-fadeOut="1500"
+                data-backtothetop-fixed-bottom="30" 
+                data-backtothetop-fixed-right="30">
+                Back to the Top
+            </a>
             <div class="back-image">
                 <h2 class="image-head">So Much to See</h2>
             </div>
@@ -128,8 +143,7 @@
                 <div class="membership-include-container">
                     <h2>What Our Guests Say About Us</h2><br>
                     <div class="owl-carousel owl-theme membership-include">
-                        <div class="item"
-                            style="background-image: url(img/icon_01.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
+                        <div class="item">
                             <div class="left">
                                 <img src="img/corinth.jpg" alt="">
                             </div>
@@ -143,14 +157,13 @@
                                         <div class="author">Dwayne Johnson - <strong>The Rock</strong></div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn blue">Get a Quote</a>
+                                <a href="#" class="btn blue">More Info</a>
                             </div>
                         </div>
-                        <div class="item"
-                            style="background-image: url(img/icon_02.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
+                        <div class="item">
                             <div class="left">
-                            <img src="img/corinth.jpg" alt="">
-                        </div>
+                                <img src="img/corinth.jpg" alt="">
+                            </div>
                             <div class="right">
                                 <h3>We love coming to Greece.</h3><br>
                                 <div class="image">
@@ -162,11 +175,10 @@
                                         <div class="author">Kosta and Monika - <strong>The Wieclaw's</strong></div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn blue">Get a Quote</a>
+                                <a href="#" class="btn blue">More Info</a>
                             </div>
                         </div>
-                        <div class="item"
-                            style="background-image: url(img/icon_02.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
+                        <div class="item">
                             <div class="left">
                                 <img src="img/corinth.jpg" alt="">
                             </div>
@@ -181,11 +193,10 @@
                                         <div class="author">JB Pritzker - <strong>JB</strong></div><br>
                                     </div>
                                 </div>
-                                <a href="#" class="btn blue">Get a Quote</a>
+                                <a href="#" class="btn blue">More Info</a>
                             </div>
                         </div>
-                        <div class="item"
-                            style="background-image: url(img/icon_03.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
+                        <div class="item">
                             <div class="left">
                                 <img src="img/corinth.jpg" alt="">
                             </div>
@@ -202,11 +213,10 @@
                                         <div class="author">Ellie Gold - <strong>Eleanor</strong></div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn blue">Become a Member</a>
+                                <a href="#" class="btn blue">More Info</a>
                             </div>
                         </div>
-                        <div class="item"
-                            style="background-image: url(img/icon_03.png); background-repeat: no-repeat; background-position: right center; background-size: contain;">
+                        <div class="item">
                             <div class="left">
                                 <img src="img/corinth.jpg" alt="">
                             </div>
@@ -222,7 +232,7 @@
                                         <div class="author">Dennis Garbis - <strong>The Beard</strong></div>
                                     </div>
                                 </div>
-                                <a href="#" class="btn blue">Become a Member</a>
+                                <a href="#" class="btn blue">More Info</a>
                             </div>
                         </div>
                     </div>
@@ -246,6 +256,7 @@
     <!-- Custom Script -->
     <script src="js/script.js"></script>
     <script src="js/fluidify.js"></script>
+    <script src="js/jquery.backtothetop.min.js"></script>
 </body>
 
 </html>
