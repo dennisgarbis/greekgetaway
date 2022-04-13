@@ -30,7 +30,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
 
 #navigation {
@@ -40,25 +40,22 @@ nav {
 #nav-flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.862);
     position: -webkit-sticky;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0;
     top: 0;
     z-index: 100;
     position: sticky;
-    width: 100%;
+
 }
 
 #logo {
-    margin-left: 5%;
-    margin-top: .20rem;
-    padding: .4rem;
+    width: 20%;
 }
 
-#logo>img {
-    max-width: 50%;
+#logo>a>img {
+    width: 40%;
 }
 
 .nav-links {
