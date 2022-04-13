@@ -128,7 +128,7 @@ nav a:hover {
     background-color: white;
     border: thin solid blue;
     color: blue;
-    transition-duration: .5s;
+    transition-duration: .7s;
 }
 
 #button:active {
