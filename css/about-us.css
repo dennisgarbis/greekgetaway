@@ -128,7 +128,13 @@ nav a:hover {
     text-align: left;
 }
 
-
+hr {
+    border-style: none;
+    border-top-style: dotted;
+    border-width: .3rem;
+    width: 10vw;
+    margin: 0 auto;
+}
 
 .faq-container {
     padding-bottom: 3rem;
@@ -136,45 +142,50 @@ nav a:hover {
 
 h2 {
     font-size: 2rem;
+    margin-bottom: 2rem;
 }
 
 .toc-tab-box {
-    border: thin solid red;
-    width: 70%;
+    width: 55vw;
     margin: 2rem auto;
 }
 
 .toc-tab-box h3.acc-title {
-    background: rgba(173, 216, 230, 0.65);
+    background: rgba(174, 223, 239, 0.65);
     border: thin solid black;
     padding: 1.8rem 1.4rem;
     font-size: 1.4rem;
-    font-weight: 400;
+    font-weight: 500;
     margin: auto;
-    margin-bottom: .4rem;
+    margin-bottom: .7rem;
     cursor: pointer;
     position: relative;
-    transition: all 0.9s ease;
-    width: 100%;
+    transition: all 0.4s ease;
+    width: 95%;
 }
 
+.toc-tab-box h3.acc-title:hover {
+    background: rgba(188, 174, 239, 0.84);
+}
+
+
+
 .toc-tab-box .acc-content {
-    background: #F3FAFD;
+    background: rgb(228, 239, 244);
     width: 100%;
-    margin-bottom: 4px;
-    padding: 30px 30px 30px 60px;
+    margin: 0 auto .4rem;
+    padding: .5rem 5rem .7rem 5rem;
     color: #617693;
     font-size: .8rem;
     position: relative;
     overflow: hidden;
+    width: 95%;
 }
 
 .accordionItemHeading .circle {
-    -webkit-border-radius: 50%;
-    -moz-border-radius: 50%;
     border-radius: 50%;
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1.8rem;
+    height: 1.8rem;
     text-align: center;
     background: #122C5F;
     color: #fff;
@@ -183,27 +194,38 @@ h2 {
 
 .accordionItemHeading .circle span {
     color: #fff;
-    font-size: 2rem;
+    font-size: 1.6rem;
     font-weight: 300;
     display: block;
 }
 
+
 .accordionItemHeading h4 {
-    color: #389AD8;
-    font-size: 1rem;
+    color: #053756;
+    font-size: 1.3rem;
     transition: all 0.5s ease;
     line-height: 24px;
     font-weight: 400;
     margin: 1rem .2rem;
     cursor: pointer;
+    text-align: left;
+}
+
+.question {
+    width: 100%;
 }
 
 .quest .answer {
-    border-left: 1px solid #58ABDF;
+    border-left: 2px solid #58ABDF;
+    border-right: 2px solid #58ABDF;
     border-radius: 0px;
     margin-top: 1.2rem;
     margin-left: 1.2rem;
+    margin: .5rem 1.2rem;
     padding: .6rem 1.2rem .7rem 2.1rem;
+    font-size: .9rem;
+    background: rgba(31, 165, 227, 0.229);
+    color: black;
 }
 
 .acc-content .quest {
@@ -272,7 +294,7 @@ footer {
     .about-p {
         display: flex;
         background-color: rgba(168, 198, 239, 0.458);
-        width: 90vw;
+        width: 70vw;
         margin: 5rem auto;
         border-radius: 30px;
     }
@@ -280,6 +302,10 @@ footer {
     .about-p p {
         width: 90%;
         background-color: white;
+    }
+
+    .toc-tab-box {
+        width: 90%;
     }
 
     .toc-tab-box .acc-content {
