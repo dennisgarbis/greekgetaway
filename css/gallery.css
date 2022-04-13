@@ -84,10 +84,35 @@ nav a:hover {
     border-bottom: 2px solid blue;
 }
 
-#port-image {
+
+#hero {
+    background-size: 100%;
+    background-position: center;
     width: 100%;
-    height: auto;
+    height: 50rem;
+    background-image: url('../images/greece-gc218c286a_1280.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
 }
+
+.contact-heading {
+    margin: 10rem auto 9rem;
+    width: 30vw;
+    /* background-color: rgba(101, 108, 148, 0.763); */
+    border-radius: 30px;
+    padding: .50rem;
+}
+
+.contact-heading h1 {
+    color: #fff;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 4rem;
+    color: darkblue;
+
+}
+
 
 .gallery {
     z-index: 2;

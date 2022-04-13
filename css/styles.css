@@ -30,7 +30,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 100%;
+    width: 80%;
 }
 
 #navigation {
@@ -40,25 +40,22 @@ nav {
 #nav-flex {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.862);
     position: -webkit-sticky;
-    margin-top: 2rem;
+    margin-top: 1rem;
     padding: 0;
     top: 0;
     z-index: 100;
     position: sticky;
-    width: 100%;
+
 }
 
 #logo {
-    margin-left: 5%;
-    margin-top: .20rem;
-    padding: .4rem;
+    width: 20%;
 }
 
-#logo>img {
-    max-width: 50%;
+#logo>a>img {
+    width: 40%;
 }
 
 .nav-links {
@@ -96,7 +93,7 @@ nav a:hover {
 }
 
 .flex-center {
-    margin-top: 8rem;
+    margin-top: 10rem;
 }
 
 #slogan {
@@ -211,7 +208,7 @@ nav a:hover {
     font-size: 3.5rem;
     letter-spacing: 1rem;
     margin-top: 8rem;
-    background-color: rgba(128, 128, 128, 0.574);
+    background-color: rgba(128, 128, 128, 0.017);
     margin-bottom: 8rem;
 }
 
@@ -300,6 +297,26 @@ footer {
         text-align: center;
     }
 
+    #logo>a>img {
+        width: 80%;
+    }
+
+    .nav-links {
+        margin: .5rem auto;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .nav-links>li>a {
+        padding: 0%;
+        margin: 0 .9rem;
+    }
+
+    .nav-links>li>a:hover {
+        text-decoration: solid;
+        text-decoration-color: blue;
+    }
+
     #hero {
         background-size: 100%;
         background-position: center;
@@ -332,42 +349,22 @@ footer {
         padding-right: .5rem;
     }
 
-    #logo {
-        margin-left: 1%;
-    }
-
-    #logo>img {
-        width: 80%;
-    }
-
-    .nav-links {
-        margin: .5rem auto;
-        width: 100%;
-    }
-
-    .nav-links>li>a {
-        padding: 0%;
-        margin: 0 .5rem;
-    }
-
-    .nav-links>li>a:hover {
-        text-decoration: solid;
-        text-decoration-color: blue;
-    }
-
     #intro {
-        display: flex;
         flex-direction: column;
+        padding: 0;
     }
 
     #intro-left {
-        flex-direction: column;
         width: 90%;
-        margin: auto;
+        margin: 1rem auto;
+    }
+
+    #about-map > p{
+        width: 90%;
     }
 
     #mapGreece {
-        width: 80%;
+        width: 100%;
     }
 
     #intro-right {
@@ -377,13 +374,14 @@ footer {
 
     .greek-vid {
         padding: 0;
+        margin-bottom: 2rem;
     }
 
     .back-image {
         background-size: 100%;
         background-position: center;
         width: 100%;
-        height: 14rem;
+        height: 12rem;
         background-image: url('../images/waves-g486bdbce9_1920.jpg');
         background-size: cover;
         display: flex;
@@ -393,9 +391,8 @@ footer {
     .image-head {
         font-size: 2rem;
         letter-spacing: .4rem;
-        margin-top: 6rem;
-        background-color: rgba(128, 128, 128, 0.574);
-        margin-bottom: 6rem;
+        margin-top: 5rem;
+        margin-bottom: 5rem;
     }
 
     #tour-list>p {

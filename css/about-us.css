@@ -96,9 +96,9 @@ nav a:hover {
 }
 
 .contact-heading {
-    margin: 20rem auto 9rem;
-    width: 30vw;
-    background-color: rgba(101, 108, 148, 0.763);
+    margin: 10rem auto 9rem;
+    width: 20vw;
+    background-color: rgba(101, 108, 148, 0.338);
     border-radius: 30px;
     padding: .50rem;
 }
