@@ -84,10 +84,13 @@
     .membership-include .item {
         width: 100%;
         display: flex;
-        grid-template-columns: 2fr 3fr;
-        grid-column-gap: 60px;
+      
         border: thin solid white;
         flex-direction: column;
+    }
+
+    .right > h3 {
+        margin-top: .8rem;
     }
 
     .text {

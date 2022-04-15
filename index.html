@@ -22,19 +22,29 @@
             </div>
             <nav aria-label="navigation">
                 <h2 id="navigation">Links</h2>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                 <ul class="nav-links">
                     <li><a id="active">Home</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about.html">About</a>
-                        <!-- <ul>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a href="contact-us.html">Contact Us</a></li>
-                        </ul> -->
+                    <li><a href="#">Destinations</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="destinations.html"  class="drop-menu">Mainland</a></li>
+                            <li><a href="#" class="drop-menu">Peloponnese</a></li>
+                            <li><a href="#" class="drop-menu">Aegean Islands</a></li>
+                            <li><a href="#" class="drop-menu">Ionian Islands</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">About</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="#" class="drop-menu">About-Us</a></li>
+                            <li><a href="#" class="drop-menu">Contact</a></li>
+                        </ul>
                     </li>
                 </ul>
             </nav>
         </div>
+
+
         <section id="hero">
             <header>
                 <a id="skip" href="#hero-button">skip to content..</a>
@@ -252,6 +262,7 @@
     <script src="js/script.js"></script>
     <script src="js/fluidify.js"></script>
     <script src="js/jquery.backtothetop.min.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>

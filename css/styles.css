@@ -30,7 +30,7 @@ header {
 nav {
     display: flex;
     justify-content: flex-end;
-    width: 80%;
+    width: 100%;
 }
 
 #navigation {
@@ -47,7 +47,6 @@ nav {
     top: 0;
     z-index: 100;
     position: sticky;
-
 }
 
 #logo {
@@ -60,25 +59,59 @@ nav {
 
 .nav-links {
     display: flex;
+    margin-right: 5rem;
 }
 
-#active {
-    border-bottom: 2px solid red;
+.nav-links>ul {
+    width: 50%;
 }
 
 nav li {
     list-style-type: none;
+    margin-right: rem;
 }
 
 nav li a {
     color: black;
     text-decoration: none;
-    margin: 0rem 4.5rem;
-    font-weight: 900;
+    margin: 0rem 3rem;
+    font-weight: 600;
 }
+
 
 nav a:hover {
     border-bottom: 2px solid blue;
+}
+
+nav ul li a:not(:only-child):after,
+nav ul li a:visited:not(:only-child):after {
+    padding-left: 2px;
+    content: ' ▾';
+}
+
+.nav-dropdown {
+    position: absolute;
+    display: none;
+    margin-top: 1.2rem;
+    background-color: #fff;
+    z-index: 1;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-dropdown>li {
+    margin-top: 1rem;
+    padding: .5rem 0;
+    border: thin solid black;
+}
+
+.nav-mobile {
+    display: none;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: #262626;
+    height: 2rem;
+    width: 2rem;
 }
 
 #hero {
@@ -292,29 +325,61 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 789px) {
     #wrapper {
         text-align: center;
     }
 
-    #logo>a>img {
-        width: 80%;
+    #skip {
+        display: none;
+    }
+
+    nav {
+        flex-direction: row;
+        width: 100%;
+        padding: .6rem 0;
+    }
+
+    .nav-mobile {
+        display: block;
+        top: .4rem;
+        right: 1.5rem;
     }
 
     .nav-links {
-        margin: .5rem auto;
+        display: none;
+    }
+
+    .nav-dropdown>li>a {
+        background-color: yellow;
+        padding: .5rem 5rem;
+        border: thin solid black;
+        transition: all 300ms ease-in-out;
+
+    }
+
+    .nav-dropdown {
+        position: static;
+    }
+
+    #logo {
+        margin-left: 1%;
+    }
+
+    #logo>a>img {
         width: 100%;
-        justify-content: flex-end;
     }
 
-    .nav-links>li>a {
-        padding: 0%;
-        margin: 0 .9rem;
+    nav li {
+        list-style-type: none;
+        margin: 1.4rem 0;
     }
 
-    .nav-links>li>a:hover {
-        text-decoration: solid;
-        text-decoration-color: blue;
+    nav li>a {
+        background-color: red;
+        padding: .5rem 5rem;
+        margin: auto;
+        border: thin solid black;
     }
 
     #hero {
@@ -359,7 +424,7 @@ footer {
         margin: 1rem auto;
     }
 
-    #about-map > p{
+    #about-map>p {
         width: 90%;
     }
 
@@ -425,4 +490,52 @@ footer {
         width: 90%;
     }
 
+}
+
+@media screen and (min-width: 799px) {}
+
+#nav-toggle {
+    position: absolute;
+    left: .1rem;
+    top: .4rem;
+    cursor: pointer;
+    padding: .5rem .5rem 5rem 0;
+}
+
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after {
+    cursor: pointer;
+    border-radius: 1px;
+    height: .3rem;
+    width: 2rem;
+    background: #ffffff;
+    position: absolute;
+    display: block;
+    content: '';
+    transition: all 300ms ease-in-out;
+}
+
+#nav-toggle span:before {
+    top: -.5rem;
+}
+
+#nav-toggle span:after {
+    bottom: -.6rem;
+}
+
+#nav-toggle.active span {
+    background-color: transparent;
+}
+
+#nav-toggle.active span:before, #nav-toggle.active span:after {
+    top: 0;
+}
+
+#nav-toggle.active span:before {
+    transform: rotate(45deg);
+}
+
+#nav-toggle.active span:after {
+    transform: rotate(-45deg);
 }
