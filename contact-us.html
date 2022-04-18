@@ -6,23 +6,34 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/contact-us.css">
-    <title>About Us</title>
+    <title>Contact Us</title>
 </head>
 
 <body>
     <div id="wrapper">
+        <div id="top"></div>
         <div id="nav-flex">
-            <a href="index.html" id="logo"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
+            <div id="logo">
+                <a href="index.html"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
+            </div>
             <nav aria-label="navigation">
                 <h2 id="navigation">Links</h2>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="destinations.html">Destinations</a></li>
+                    <li><a href="#">Destinations</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="destinations.html" class="drop-menu">Mainland</a></li>
+                            <li><a href="#" class="drop-menu">Peloponnese</a></li>
+                            <li><a href="#" class="drop-menu">Aegean Islands</a></li>
+                            <li><a href="#" class="drop-menu">Ionian Islands</a></li>
+                        </ul>
+                    </li>
                     <li><a href="gallery.html">Gallery</a></li>
-                    <li><a href="about.html">About</a>
-                        <ul>
-                            <li><a href="about-us.html">About Us</a></li>
-                            <li><a id="active" href="contact-us.html">Contact Us</a></li>
+                    <li><a href="#">About</a>
+                        <ul class="nav-dropdown">
+                            <li><a href="about-us.html" class="drop-menu">About-Us</a></li>
+                            <li><a id="active" class="drop-menu">Contact-Us</a></li>
                         </ul>
                     </li>
                 </ul>
@@ -39,60 +50,61 @@
                         voluptas iure, voluptates in neque quod veniam delectus eligendi molestiae dolorem saepe at! Id,
                         cupiditate iusto.</p>
                 </div>
-                <div class="contact-form">
-                    <form action="process.html" method="post" name="signup" id="contact">
-                        <div class="question">
-                            <label for="fullname">Full Name * :</label><br>
-                            <input type="text" class="form-control" name="fullname" required="">
-                        </div>
-                        <div class="question">
-                            <label for="email">Email * :</label><br>
-                            <input type="email" class="form-control" name="email" data-parsley-trigger="change"
-                                required="">
-                        </div>
-                        <div class="question">
-                            <label for="contactMethod">Preferred Contact Method *:</label>
-                            <p>
-                                Email: <input type="radio" name="contactMethod" id="contactMethodEmail" value="Email"
-                                    required="">
-                                Phone: <input type="radio" name="contactMethod" id="contactMethodPhone" value="Phone">
-                            </p>
-                        </div>
-                        <label for="hobbies">What are you interested in? (Optional, but 2 minimum):</label>
-                        <p>
-                            Mainland <input type="checkbox" name="hobbies[]" id="hobby1" value="ski"
-                                data-parsley-mincheck="2"><br>
-                            Peloponnese <input type="checkbox" name="hobbies[]" id="hobby2" value="run"><br>
-                            Aegean Islands <input type="checkbox" name="hobbies[]" id="hobby3" value="eat"><br>
-                            Ionian Island <input type="checkbox" name="hobbies[]" id="hobby4" value="sleep"><br>
-                            Relaxing <input type="checkbox" name="hobbies[]" id="hobby5" value="read"><br>
-                            History <input type="checkbox" name="hobbies[]" id="hobby6" value="code"><br>
-                        </p>
-
-                        <p>
-                            <label for="heard">Heard about us *:</label><br>
-                            <select id="heard" required="">
-                                <option value="">Choose..</option>
-                                <option value="press">Online</option>
-                                <option value="net">Word of Mouth</option>
-                                <option value="mouth">TV</option>
-                                <option value="other">Radio</option>
-                            </select>
-                        </p>
-
-                        <p>
-                            <label for="message">Message (20 chars min, 100 max) :</label><br>
-                            <textarea id="message" class="form-control" name="message" cols="30" rows="10"></textarea>
-                        </p>
-
-                        <br>
-                        <input type="submit" class="btn btn-default" value="submit">
-
-
-                    </form>
-                </div>
-
+                
             </header>
+        </section><!-- end of hero section -->
+
+        <section id="top-container">
+            <div class="contact-form">
+                <form action="process.html" method="post" name="signup" id="contact">
+                    <div class="question">
+                        <label for="fullname">Full Name * :</label><br>
+                        <input type="text" class="form-control" name="fullname" required="">
+                    </div>
+                    <div class="question">
+                        <label for="email">Email * :</label><br>
+                        <input type="email" class="form-control" name="email" data-parsley-trigger="change"
+                            required="">
+                    </div>
+                    <div class="question">
+                        <label for="contactMethod">Preferred Contact Method *:</label>
+                        <p>
+                            Email: <input type="radio" name="contactMethod" id="contactMethodEmail" value="Email"
+                                required="">
+                            Phone: <input type="radio" name="contactMethod" id="contactMethodPhone" value="Phone">
+                        </p>
+                    </div>
+                    <label for="hobbies">What are you interested in? (Optional, but 2 minimum):</label>
+                    <p>
+                        Mainland <input type="checkbox" name="hobbies[]" id="hobby1" value="ski"
+                            data-parsley-mincheck="2"><br>
+                        Peloponnese <input type="checkbox" name="hobbies[]" id="hobby2" value="run"><br>
+                        Aegean Islands <input type="checkbox" name="hobbies[]" id="hobby3" value="eat"><br>
+                        Ionian Island <input type="checkbox" name="hobbies[]" id="hobby4" value="sleep"><br>
+                        Relaxing <input type="checkbox" name="hobbies[]" id="hobby5" value="read"><br>
+                        History <input type="checkbox" name="hobbies[]" id="hobby6" value="code"><br>
+                    </p>
+
+                    <p>
+                        <label for="heard">Heard about us *:</label><br>
+                        <select id="heard" required="">
+                            <option value="">Choose..</option>
+                            <option value="press">Online</option>
+                            <option value="net">Word of Mouth</option>
+                            <option value="mouth">TV</option>
+                            <option value="other">Radio</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="message">Message (20 chars min, 100 max) :</label><br>
+                        <textarea id="message" class="form-control" name="message" cols="30" rows="10"></textarea>
+                    </p>
+
+                    <br>
+                    <input type="submit" class="btn btn-default" value="submit">
+                </form>
+            </div>
         </section>
         <footer>
             <p>&#169; 2022 WEB 235</p>
@@ -100,6 +112,7 @@
         </footer>
     </div><!-- end of wrapper -->
     <script src="js/contact.js"></script>
+    <script src="js/function.js"></script>
 </body>
 
 </html>

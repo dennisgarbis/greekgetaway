@@ -10,6 +10,10 @@
     margin-left: auto;
 }
 
+body {
+    background-color: #2292BD;
+}
+
 #skip {
     position: absolute;
     transform: translateY(-800%);
@@ -51,11 +55,16 @@ nav {
 
 #logo {
     width: 20%;
+    padding: 5px;
 }
 
 #logo>a>img {
     width: 40%;
     vertical-align: top;
+}
+
+#active {
+    border-bottom: 2px solid red;
 }
 
 .nav-links {
@@ -69,7 +78,6 @@ nav {
 
 nav li {
     list-style-type: none;
-    margin-right: rem;
 }
 
 nav li a {
@@ -120,7 +128,7 @@ nav ul li a:visited:not(:only-child):after {
     background-position: center;
     width: 100%;
     height: 50rem;
-    background-image: url('../images/johnny-africa-_ZX0S27D3fw-unsplash.jpg');
+    background-image: url('../images/home-hero.jpg');
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -175,7 +183,7 @@ nav ul li a:visited:not(:only-child):after {
 
 #intro {
     display: flex;
-    background-color: lightcyan;
+    background-color: #ABC0CC;
     padding: 4rem;
 }
 
@@ -247,7 +255,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 #tour-list {
-    background-color: lightsteelblue;
+    background-color: #A6C2D0;
 }
 
 #tour-list>h2 {
@@ -271,9 +279,9 @@ nav ul li a:visited:not(:only-child):after {
 
 .places-box {
     width: 24%;
-    height: 100%;
+    height: fit-content;
     border: thin solid black;
-    background-color: rgb(185, 211, 241);
+    background-color: #88b7cf;
 }
 
 .places-box>img {
@@ -283,11 +291,11 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 .places-box>h3 {
-    border: thin solid blue;
+    border: thin solid black;
     margin: 0% auto;
-    width: 40%;
-    padding: .5rem;
-    background-color: darkblue;
+    width: fit-content;
+    padding: .5rem .8rem;
+    background-color: #073161;
     color: white;
     font-weight: 300;
 }
@@ -329,7 +337,9 @@ footer {
     padding: 20px;
 }
 
-@media screen and (max-width: 789px) {
+@media screen and (max-width: 1023px) {}
+
+@media screen and (max-width: 600px) {
     #wrapper {
         text-align: center;
     }
@@ -338,8 +348,21 @@ footer {
         display: none;
     }
 
+
+    #logo {
+        margin-right: 75%;
+    }
+
+    #logo>a>img {
+        width: 100%;
+    }
+
     nav {
         justify-content: flex-start;
+    }
+
+    nav a:hover {
+        border-bottom: none;
     }
 
     #nav-flex {
@@ -356,37 +379,42 @@ footer {
         display: none;
         width: 100vw;
         margin: 0;
-        background-color: #1C8FB8;
+        background-color: #2292BD;
     }
 
-    .nav-dropdown>li>a {
-        background-color: yellow;
-        padding: .5rem 5rem;
-        border: thin solid black;
-        transition: all 300ms ease-in-out;
+    .nav-links>li {
+        margin: 20px 0px;
+
+    }
+
+    .nav-links>li>a {
+        padding: 4px 100px;
+        margin: 0 auto;
+
     }
 
     .nav-dropdown {
         position: static;
+        align-content: center;
     }
 
-    #logo {
-        margin-right: 75%;
+    .nav-dropdown>li {
+        background-color: #84b2c4;
+        margin: 0;
+        transition: all 300ms ease-in-out;
     }
 
-    #logo>a>img {
-        width: 100%;
-    }
 
     nav li {
         list-style-type: none;
-        margin: 1.4rem 0;
+        margin: 0rem;
+        background-color: #2292BD;
+        width: 100%;
     }
 
     nav li>a {
-        background-color: red;
-        padding: .5rem 5rem;
-        border: thin solid black;
+        padding: 0;
+        width: fit-content;
     }
 
     #hero {
@@ -394,7 +422,7 @@ footer {
         background-position: center;
         width: 100%;
         height: 15rem;
-        background-image: url('../images/johnny-africa-_ZX0S27D3fw-unsplash.jpg');
+        background-image: url('../images/home-hero.jpg');
         background-size: cover;
         display: flex;
         justify-content: center;
@@ -501,12 +529,12 @@ footer {
 
 @media screen and (min-width: 799px) {}
 
+
 #nav-toggle {
-    position: absolute;
+    position: relative;
     left: .1rem;
-    top: .4rem;
+    top: .9rem;
     cursor: pointer;
-    padding: .5rem .5rem 5rem 0;
 }
 
 #nav-toggle span,
@@ -528,7 +556,7 @@ footer {
 }
 
 #nav-toggle span:after {
-    bottom: -.6rem;
+    bottom: -.5rem;
 }
 
 #nav-toggle.active span {
