@@ -23,10 +23,10 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Destinations</a>
                         <ul class="nav-dropdown">
-                            <li><a href="destinations.html" class="drop-menu">Mainland</a></li>
-                            <li><a href="#" class="drop-menu">Peloponnese</a></li>
-                            <li><a href="#" class="drop-menu">Aegean Islands</a></li>
-                            <li><a href="#" class="drop-menu">Ionian Islands</a></li>
+                            <li><a href="mainland.html" class="drop-menu">Mainland</a></li>
+                            <li><a href="peloponnese.html" class="drop-menu">Peloponnese</a></li>
+                            <li><a href="aegean.html" class="drop-menu">Aegean Islands</a></li>
+                            <li><a href="ionian.html" class="drop-menu">Ionian Islands</a></li>
                         </ul>
                     </li>
                     <li><a href="gallery.html">Gallery</a></li>
@@ -42,18 +42,14 @@
         <section id="hero">
             <header>
                 <a id="skip" href="#hero-button">skip to content..</a>
-
                 <!-- flex area -->
                 <div class="contact-heading">
-                    <h1>Contact Us</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem, voluptatem quia cumque enim ex
-                        voluptas iure, voluptates in neque quod veniam delectus eligendi molestiae dolorem saepe at! Id,
-                        cupiditate iusto.</p>
+                    <h1>CONTACT<br>US</h1>
                 </div>
-                
-            </header>
-        </section><!-- end of hero section -->
 
+            </header>
+
+        </section>
         <section id="top-container">
             <div class="contact-form">
                 <form action="process.html" method="post" name="signup" id="contact">
@@ -63,8 +59,7 @@
                     </div>
                     <div class="question">
                         <label for="email">Email * :</label><br>
-                        <input type="email" class="form-control" name="email" data-parsley-trigger="change"
-                            required="">
+                        <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
                     </div>
                     <div class="question">
                         <label for="contactMethod">Preferred Contact Method *:</label>
@@ -106,12 +101,24 @@
                 </form>
             </div>
         </section>
+
+
+
+
+
+
+
+
         <footer>
             <p>&#169; 2022 WEB 235</p>
             <p> Dennis Garbis&#8482;</p>
         </footer>
     </div><!-- end of wrapper -->
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/contact.js"></script>
+    <script src="js/accordion.js"></script>
     <script src="js/function.js"></script>
 </body>
 
