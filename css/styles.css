@@ -290,18 +290,22 @@ nav ul li a:visited:not(:only-child):after {
     height: 56%;
 }
 
-.places-box>h3 {
-    border: thin solid black;
+.tour-button {
     margin: 0% auto;
     width: fit-content;
     padding: .5rem .8rem;
     background-color: #073161;
     color: white;
     font-weight: 300;
+    text-decoration: none;
+}
+
+.tour-button:hover {
+    background-color: lightblue;
+    color: black;
 }
 
 .places-box>p {
-
     margin: auto;
     padding: 1rem;
 
