@@ -21,6 +21,10 @@
 .btn.blue:hover {
     background-color: red;
     color: black;
+    transform: scale(1.1);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
 
 }
 

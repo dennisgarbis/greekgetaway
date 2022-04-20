@@ -158,6 +158,25 @@ main {
     min-height: 20vh;
 }
 
+#backtothetop-fixed {
+    padding: 1.25rem;
+    border: 0;
+    border-radius: 20px;
+    background-color: darkblue;
+    color: #fff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: 5vw;
+}
+
+#backtothetop-fixed:hover {
+    background-color: darkred;
+    transform: translate(0%, 0%) scale(1.1);
+    transition-duration: .4s;
+    transition-timing-function: ease-in-out;
+    transition-delay: 0s;
+}
+
 .athens-div {
     display: flex;
     background-color: #ccfa;
@@ -193,7 +212,6 @@ main {
     background-color: #ccfa;
     padding: 2%;
     align-items: center;
-
 }
 
 .salonica-left {
@@ -214,7 +232,21 @@ main {
     width: 50%;
 }
 
-
+.YACSSTooltip {
+    border: 1px solid #333; 
+    background-color: #161616; 
+    border-radius: 5px; 
+    padding: 5px 0; 
+    color: #fff; 
+    font-size: .9rem;
+    max-width: 250px;
+    line-break: auto;
+    word-break: normal;
+    word-spacing: 0px;
+    white-space: normal;
+    text-align: center;
+    verflow-wrap: normal;
+  }
 
 .back-image {
     background-image: url('../images/athens-acropolis.jpg');
