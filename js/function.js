@@ -16,7 +16,3 @@
       });
     }); 
   })(jQuery);
-
-  $(function() {
-    $('img').addTooltip();
-  });

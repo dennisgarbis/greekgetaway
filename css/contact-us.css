@@ -150,21 +150,40 @@ nav ul li a:visited:not(:only-child):after {
     font-size: 4rem;
 }
 
-
-form {
-    background-color: rgba(255, 255, 255, 0.419);
-    width: 30%;
-    margin: 2rem auto;
-    padding: 2rem 0;
+.contact-form {
+    background-color: white;
+    width: fit-content;
+    margin: 3rem auto;
+    padding: 2rem 5rem;
 }
 
-.question {
-    margin: .3rem 0 0;
+form#signup div {
+    padding-bottom: .8rem;
 }
 
-#top-container {
-    min-height: 60vh;
+
+#signup label.error {
+    font-size: .9rem;
+    color: #F00;
+    font-weight: bold;
+    display: block;
+    margin-left: ;
 }
+
+#signup input.error,
+#signup select.error {
+    background: #dd2b2b53;
+}
+
+form#order input[type="radio"], form#signup input[type="radio"], form#signup input[type="checkbox"] {
+    margin-top: .4rem;
+}
+
+form, #submit {
+    margin: 0 auto;
+}
+
+
 footer {
     background-color: black;
     color: white;

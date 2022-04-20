@@ -55,54 +55,71 @@
 
         </section>
         <section id="top-container">
+
+
             <div class="contact-form">
-                <form action="process.html" method="post" name="signup" id="contact">
-                    <div class="question">
-                        <label for="fullname">Full Name * :</label><br>
-                        <input type="text" class="form-control" name="fullname" required="">
+                <h2>Please Fill Out This Form</h2>
+                <form action="process.html" method="post" name="signup" id="signup">
+                    <div>
+                        <label for="fname" class="label">First Name:</label><br>
+                        <input name="fname" type="text" id="fname" class="required">
                     </div>
-                    <div class="question">
-                        <label for="email">Email * :</label><br>
-                        <input type="email" class="form-control" name="email" data-parsley-trigger="change" required="">
+                    <div>
+                        <label for="lname" class="label">Last Name:</label><br>
+                        <input name="lname" type="text" id="lname" class="required">
                     </div>
-                    <div class="question">
-                        <label for="contactMethod">Preferred Contact Method *:</label>
-                        <p>
-                            Email: <input type="radio" name="contactMethod" id="contactMethodEmail" value="Email"
-                                required="">
-                            Phone: <input type="radio" name="contactMethod" id="contactMethodPhone" value="Phone">
-                        </p>
+                    <div>
+                        <label for="email" class="label">E-mail:</label><br>
+                        <input name="email" type="text" id="email" class="required">
                     </div>
-                    <label for="hobbies">What are you interested in? (Optional, but 2 minimum):</label>
-                    <p>
-                        Mainland <input type="checkbox" name="hobbies[]" id="hobby1" value="ski"
-                            data-parsley-mincheck="2"><br>
-                        Peloponnese <input type="checkbox" name="hobbies[]" id="hobby2" value="run"><br>
-                        Aegean Islands <input type="checkbox" name="hobbies[]" id="hobby3" value="eat"><br>
-                        Ionian Island <input type="checkbox" name="hobbies[]" id="hobby4" value="sleep"><br>
-                        Relaxing <input type="checkbox" name="hobbies[]" id="hobby5" value="read"><br>
-                        History <input type="checkbox" name="hobbies[]" id="hobby6" value="code"><br>
-                    </p>
-
-                    <p>
-                        <label for="heard">Heard about us *:</label><br>
-                        <select id="heard" required="">
-                            <option value="">Choose..</option>
-                            <option value="press">Online</option>
-                            <option value="net">Word of Mouth</option>
-                            <option value="mouth">TV</option>
-                            <option value="other">Radio</option>
+                    <div>
+                        <label for="confirm_email" class="label">Confirm Email:</label><br>
+                        <input name="confirm_email" type="text" id="confirm_email" class="required">
+                    </div>
+                    <div>
+                        <label for="phone" class="label">Phone:</label><br>
+                        <input name="phone" type="tel" id="phone">
+                    </div>
+                    <div id="check-area"><span class="label">What area are you interested in?</span><br>
+                        <input name="interest" type="checkbox" id="mainland" value="mainland" class="required"
+                            title="Please check at least 1 interest.">
+                        <label for="mainland">Mainland</label><br>
+                        <input name="interest" type="checkbox" id="peloponnese" value="peloponnese">
+                        <label for="peloponnese">Peloponnese</label><br>
+                        <input name="interest" type="checkbox" id="aegean" value="aegean">
+                        <label for="aegean">Aegean Islands</label><br>
+                        <input name="interest" type="checkbox" id="ionian" value="ionian">
+                        <label for="ionian">Ionian Islands</label><br>
+                    </div>
+                    <div>
+                        <label for="continent" class="label">What continent are you coming from?</label><br>
+                        <select name="continent" id="continent" class="required" title="Please choose a continent.">
+                            <option value="">--Please select one--</option>
+                            <option value="north america">North America</option>
+                            <option value="europe">Europe</option>
+                            <option value="south america">South America</option>
+                            <option value="asia">Asia</option>
+                            <option value="australia">Australia</option>
+                            <option value="antarctica">Antarctica</option>
                         </select>
-                    </p>
+                    </div>
+                    <div>
+                        <label for="comments" class="label">Comments</label><br>
+                        <textarea name="comments" cols="30" rows="5" id="comments"></textarea>
+                    </div>
+                    <div class="labelBlock">How would you like us to respond? </div>
+                    <div>
+                        <input type="radio" name="spam" id="yes" value="yes" class="required"
+                            title="Please select an option">
+                        <label for="yes">Email</label>
+                        <input type="radio" name="spam" id="definitely" value="definitely">
+                        <label for="definitely">Phone</label>
+                    </div>
+                    <div>
+                        <input type="submit" name="submit" id="submit" value="Submit">
+                    </div>
+                    </form>
 
-                    <p>
-                        <label for="message">Message (20 chars min, 100 max) :</label><br>
-                        <textarea id="message" class="form-control" name="message" cols="30" rows="10"></textarea>
-                    </p>
-
-                    <br>
-                    <input type="submit" class="btn btn-default" value="submit">
-                </form>
             </div>
         </section>
 
@@ -121,6 +138,10 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+
     <script src="js/contact.js"></script>
     <script src="js/accordion.js"></script>
     <script src="js/function.js"></script>
