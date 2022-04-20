@@ -22,7 +22,7 @@
             </div>
             <nav aria-label="navigation">
                 <h2 id="navigation">Links</h2>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <div class="nav-mobile"><a id="nav-toggle" href="#"><span> .</span></a></div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Destinations</a>
@@ -45,7 +45,7 @@
         </div>
         <section id="hero">
             <header>
-                <a id="skip" href="#hero-button">skip to content..</a>
+                <a id="skip" href="#favorites">skip to content..</a>
 
                 <!-- flex area -->
                 <div class="contact-heading">
@@ -56,111 +56,446 @@
 
         </section>
         <main>
-            <h1 id="favorites">Some of our Favorites</h1>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati consequatur cumque nam corrupti
+            <h2 id="favorites">Some of our Favorites</h2>
+            <p class="intro-p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia obcaecati consequatur
+                cumque nam corrupti
                 consectetur quas, repellat unde tempore ex fugiat illum fugit eaque quod pariatur nihil velit aliquid
                 modi.</p>
-            <div class="container">
-                <div class="gallery">
-                    <div class="row">
-                        <figure role="onclick">
-                            <img src="images/acropolis.jpg" alt="" />
-                            <div class="caption"><br>The Parthenon</div>
-                            <figcaption>The Acropolis
-                                <small>The Parthenon</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/kefalonia.jpg" alt="" />
-                            <div class="caption"><br>Myrtos Beach</div>
-                            <figcaption>Kefalonia
-                                <small>Myrtos Beach</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/meteora.jpg" alt="" />
-                            <div class="caption"><br>Meteora</div>
-                            <figcaption>Meteora
-                                <small>Greek Monastery</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/syros.jpg" alt="" />
-                            <div class="caption"><br>Syros</div>
-                            <figcaption>Syros
-                                <small>Syros seaside</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/santorini.jpg" alt="" />
-                            <div class="caption"><br>Santorini</div>
-                            <figcaption>Santorini
-                                <small>Oia</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/greece-g5e4991f9c_1280.jpg" alt="" />
-                            <div class="caption"><br>Sami</div>
-                            <figcaption>Kefalonia
-                                <small>Sami</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/nafplio.jpg" alt="" />
-                            <div class="caption"><br>Nafplio</div>
-                            <figcaption>Nafplio
-                                <small>Castle</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/zakynthos.jpg" alt="" />
-                            <div class="caption"><br>Zakynthos</div>
-                            <figcaption>Navagio Beach
-                                <small>Shipwreck Beach</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/assos.jpg" alt="" />
-                            <div class="caption"><br>Assos</div>
-                            <figcaption>Kefalonia
-                                <small>Assos</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/athens-gd4b5d9c9a_1280.jpg" alt="" />
-                            <div class="caption"><br>Athena</div>
-                            <figcaption>Temple of Athena
-                                <small>Athens</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/city-g783c1860f_1280.jpg" alt="" />
-                            <div class="caption"><br>Not Sure</div>
-                            <figcaption>Greece
-                                <small>Somewhere in Greece</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
-                        <figure>
-                            <img src="images/santorini-gb8c0cbd49_1280.jpg" alt="" />
-                            <div class="caption"><br>Santorini</div>
-                            <figcaption>Santorini
-                                <small>Blue Dome</small>
-                                <small class="xsmall">photo taken by eleanor</small>
-                            </figcaption>
-                        </figure>
+            <div>
+                <section class="mainland-images">
+                    <div class="gallery-heading">
+                        <h2>Mainland Images</h2>
+                        <p class="intro-p">Below you will find images that people have taken throughout the mainland area in Greece. From Athens all the way up to Thessaloniki, and everywhere in between</p>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            <figure role="onclick">
+                                <img src="images/acropolis.jpg" alt="close up view of the parthenon" />
+                                <div class="caption"><br>The Parthenon</div>
+                                <figcaption>The Acropolis
+                                    <small>The Parthenon</small>
+                                    <small class="xsmall">photo taken by eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/acropolis-view.jpg" alt="distant view of the acropolis" />
+                                <div class="caption"><br>Acropolis</div>
+                                <figcaption>The Parthenon
+                                    <small>The Acropolis</small>
+                                    <small class="xsmall">photo taken by Kostas G.</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/meteora.jpg" alt="the monasteries at meteora" />
+                                <div class="caption"><br>Meteora</div>
+                                <figcaption>Meteora
+                                    <small>Greek Monastery</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/athens.jpg" alt="overlooking athens" />
+                                <div class="caption"><br>Athens</div>
+                                <figcaption>Athens
+                                    <small>Overview of Athens</small>
+                                    <small class="xsmall">photo taken by Valadis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/meteora2.jpg" alt="distant view of the monasteries at meteora" />
+                                <div class="caption"><br>Meteora</div>
+                                <figcaption>Meteora
+                                    <small>Monastary</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/statues.jpg" alt="statues on the acropolis" />
+                                <div class="caption"><br>Statues</div>
+                                <figcaption>Athens
+                                    <small>statues</small>
+                                    <small class="xsmall">photo taken by Chris</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/athens-view.jpg" alt="panoramic view of athens" />
+                                <div class="caption"><br>Athens</div>
+                                <figcaption>Athens
+                                    <small>City View</small>
+                                    <small class="xsmall">photo taken by John</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/statues2.jpg" alt="close up view of the statues on the acropolis" />
+                                <div class="caption"><br>Parthenon Statues</div>
+                                <figcaption>Parthenon Statues
+                                    <small>View of Statues</small>
+                                    <small class="xsmall">photo taken by Konstantinos</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/greek-salad.jpg" alt="a village salad presented at a table" />
+                                <div class="caption"><br>Athens</div>
+                                <figcaption>Athens
+                                    <small>Horiatiki Salata</small>
+                                    <small class="xsmall">photo taken by Peter</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/thessaloniki.jpg" alt="statue at pier in thessaloniki" />
+                                <div class="caption"><br>Thessaloniki</div>
+                                <figcaption>Thessaloniki
+                                    <small>Pier in Thessaloniki</small>
+                                    <small class="xsmall">photo taken by Maria</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/thessaloniki2.jpg" alt="city view of thessaloniki" />
+                                <div class="caption"><br>Thessaloniki</div>
+                                <figcaption>Thessaloniki
+                                    <small>View of Thessaloniki</small>
+                                    <small class="xsmall">photo taken by Sofia</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/parga.jpg" alt="seaside view of parga" />
+                                <div class="caption"><br>Parga</div>
+                                <figcaption>Parga
+                                    <small>Seaside</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/halkidiki.jpg" alt="port in halkidiki" />
+                                <div class="caption"><br>Halkidiki</div>
+                                <figcaption>Halkidiki
+                                    <small>Port</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/monastiraki.jpg" alt="monastiraki area in athens" />
+                                <div class="caption"><br>Monastiraki</div>
+                                <figcaption>Athens
+                                    <small>Monastiraki</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- end of row -->
                     </div> <!-- end of gallery -->
-                </div> <!-- end of row -->
+                </section> <!-- end of mainland section -->
+                <section class="peloponnese-images">
+                    <div class="gallery-heading">
+                        <h2>Peloponnese Images</h2>
+                        <p class="intro-p">Peloponnese is the peninsula to the south of Athen's. Plenty of old, historical places to see here.</p>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            <figure>
+                                <img src="images/corinth.jpg" alt="a boat going through the corinth canal" />
+                                <div class="caption"><br>Corinth Canal</div>
+                                <figcaption>Corinth Canal
+                                    <small>Boat going through the canal</small>
+                                    <small class="xsmall">photo taken by Jack</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Epidaurus.jpg" alt="ancient theatre in Epidaurus" />
+                                <div class="caption"><br>Epidaurus</div>
+                                <figcaption>Epidaurus
+                                    <small>Theatre in Epidaurus</small>
+                                    <small class="xsmall">photo taken by Lenore</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/monemvasia.jpg" alt="looking up the mountains in monemvasia" />
+                                <div class="caption"><br>Monemvasia</div>
+                                <figcaption>Monemvasia
+                                    <small>Monemvasia</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/nafplio.jpg" alt="view looking over nafplio and at the castle" />
+                                <div class="caption"><br>Nafplio</div>
+                                <figcaption>Nafplio
+                                    <small>Castle of Nafplio</small>
+                                    <small class="xsmall">photo taken by Kostas G.</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/delphi.JPG" alt="the ruins of delphi" />
+                                <div class="caption"><br>Delphi</div>
+                                <figcaption>Delphi
+                                    <small>Temple of Delphi</small>
+                                    <small class="xsmall">photo taken by Ellie</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Nafplio2.jpg" alt="looking down at the town of nafplio" />
+                                <div class="caption"><br>Nafplio</div>
+                                <figcaption>Nafplip
+                                    <small>Palamidi</small>
+                                    <small class="xsmall">photo taken by Eleni</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Olympia.jpg" alt="ruins of olympia" />
+                                <div class="caption"><br>Olympia</div>
+                                <figcaption>Olympia
+                                    <small>Ruins of Olympia</small>
+                                    <small class="xsmall">photo taken by Chris</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/zeus.jpg" alt="temple of zeus" />
+                                <div class="caption"><br>Zeus</div>
+                                <figcaption>Temple of Zeus
+                                    <small>Zeus</small>
+                                    <small class="xsmall">photo taken by Dimitri</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Mystra.jpg" alt="monastery of mystra" />
+                                <div class="caption"><br>Mystra</div>
+                                <figcaption>Mystra
+                                    <small>Monastery</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Mycenae.jpg" alt="Mycenae ruins" />
+                                <div class="caption"><br>Mycenae</div>
+                                <figcaption>Mycenae
+                                    <small>ruins of mycenae</small>
+                                    <small class="xsmall">photo taken by Ellie</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/mani.jpg" alt="calm waters by mani peninsula" />
+                                <div class="caption"><br>Mani Peninsula</div>
+                                <figcaption>Mani
+                                    <small>crystal clear water</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/Monemvassia2.jpg" alt="looking from the sea towards monemvasia" />
+                                <div class="caption"><br>Monemvassia</div>
+                                <figcaption>Monemvassia
+                                    <small>Nice little town</small>
+                                    <small class="xsmall">photo taken by Mike</small>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- end of row -->
+                    </div> <!-- end of gallery -->
+                </section> <!-- end of peloponnese section -->
+                <section class="ionian-images">
+                    <div class="gallery-heading">
+                        <h2>Ionian Islands Images</h2>
+                        <p class="intro-p">Here are the islands to the west of Greece. Beautiful clear waters, and perfect weather. From Kefalonia to Zakynthos, there is plenty to see here.</p>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            <figure role="onclick">
+                                <img src="images/assos.jpg" alt="small town of assos located by the sea" />
+                                <div class="caption"><br>Assos</div>
+                                <figcaption>Kefalonia
+                                    <small>Assos</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/boat.jpg" alt="george's fishing boat floating in the sea" />
+                                <div class="caption"><br>Kefalonia</div>
+                                <figcaption>Kefalonia
+                                    <small>Fishing Boat</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/cliff.jpg" alt="view of myrtos beach between cliffs" />
+                                <div class="caption"><br>Myrtos Beach</div>
+                                <figcaption>Kefalonia
+                                    <small>Myrtos Beach</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/syros.jpg" alt="" />
+                                <div class="caption"><br>Syros</div>
+                                <figcaption>Syros
+                                    <small>Syros seaside</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/donkey.jpg" alt="couple of donkeys waiting on the stairs" />
+                                <div class="caption"><br>Lefkada</div>
+                                <figcaption>Lefkada
+                                    <small>Donkey's</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/greece-g5e4991f9c_1280.jpg" alt="" />
+                                <div class="caption"><br>Sami</div>
+                                <figcaption>Kefalonia
+                                    <small>Sami</small>
+                                    <small class="xsmall">photo taken by Konstantinos</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/kefalonia.jpg" alt="view of myrtos beach from up above" />
+                                <div class="caption"><br>Myrtos Beach</div>
+                                <figcaption>Kefalonia
+                                    <small>Myrtos Beach</small>
+                                    <small class="xsmall">photo taken by George</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/zakynthos.jpg" alt="shipwreck beach from high in the sky" />
+                                <div class="caption"><br>Zakynthos</div>
+                                <figcaption>Navagio Beach
+                                    <small>Shipwreck Beach</small>
+                                    <small class="xsmall">photo taken by Chris</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/shipwreck.jpg"
+                                    alt="close view of the boat the is stranded on navagio beach" />
+                                <div class="caption"><br>Shipwreck Beach</div>
+                                <figcaption>Zakynthos
+                                    <small>Shipwreck Beach</small>
+                                    <small class="xsmall">photo taken by Maria</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/greek-waves.jpg" alt="waves crashing on the beach" />
+                                <div class="caption"><br>Kefalonia</div>
+                                <figcaption>Kefalonia
+                                    <small>Makris Gialos</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/agios-gerasimos.jpg" alt="agios gerasimos monastery in kefalonia" />
+                                <div class="caption"><br>Agios Gerasimos</div>
+                                <figcaption>Kefalonia
+                                    <small>Agios Gerasimos Monastery</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- end of row -->
+                    </div> <!-- end of gallery -->
+                </section> <!-- end of aegean section -->
+                <section class="aegean-images">
+                    <div class="gallery-heading">
+                        <h2>Aegean Islands Images</h2>
+                        <p class="intro-p">The most beautiful islands anywhere in the world are found here. From the romantic island of Santorini to the party island of Mykonos, there is an island here for everyone.</p>
+                    </div>
+                    <div class="gallery">
+                        <div class="row">
+                            <figure role="onclick">
+                                <img src="images/milos.jpg" alt="little boat in the sea next to tables " />
+                                <div class="caption"><br>Milos</div>
+                                <figcaption>Milos
+                                    <small>Boat in the water</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/milos2.jpg" alt="port in milos" />
+                                <div class="caption"><br>Milos</div>
+                                <figcaption>Milos
+                                    <small>Mylos port</small>
+                                    <small class="xsmall">photo taken by Valadis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/mykonos.jpg" alt="white walled buildings in mykonos" />
+                                <div class="caption"><br>Mykonos</div>
+                                <figcaption>Mykonos
+                                    <small>Paved walk</small>
+                                    <small class="xsmall">photo taken by Kathy</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/syros.jpg" alt="bay view in syros" />
+                                <div class="caption"><br>Syros</div>
+                                <figcaption>Syros
+                                    <small>Syros seaside</small>
+                                    <small class="xsmall">photo taken by Lenore</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/santorini.jpg" alt="houses cliffside in santorini" />
+                                <div class="caption"><br>Santorini</div>
+                                <figcaption>Santorini
+                                    <small>Oia</small>
+                                    <small class="xsmall">photo taken by Eleanor</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/stairs.jpg" alt="view down the stairs overlooking the water in santorini" />
+                                <div class="caption"><br>Sami</div>
+                                <figcaption>Kefalonia
+                                    <small>Sami</small>
+                                    <small class="xsmall">photo taken by Ellie</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/santorini-gb8c0cbd49_1280.jpg" alt="church in santorini" />
+                                <div class="caption"><br>Santorini</div>
+                                <figcaption>Santorini
+                                    <small>Church in Santorini</small>
+                                    <small class="xsmall">photo taken by Kathy</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/santorini3.jpg" alt="water coming up to the shore in santorini" />
+                                <div class="caption"><br>Santorini</div>
+                                <figcaption>Navagio Beach
+                                    <small>Shipwreck Beach</small>
+                                    <small class="xsmall">photo taken by Eleni</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/lesvos.jpg" alt="city in lesvos next to the sea" />
+                                <div class="caption"><br>Lesvos</div>
+                                <figcaption>Lesvos
+                                    <small>Seaside town</small>
+                                    <small class="xsmall">photo taken by Kostas G.</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/greek-waves.jpg" alt="waves crashing on the beach" />
+                                <div class="caption"><br>Kefalonia</div>
+                                <figcaption>Kefalonia
+                                    <small>Makris Gialos</small>
+                                    <small class="xsmall">photo taken by Dennis</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/city-g783c1860f_1280.jpg" alt="" />
+                                <div class="caption"><br>Milos</div>
+                                <figcaption>Greece
+                                    <small>Somewhere in Greece</small>
+                                    <small class="xsmall">photo taken by Georgia</small>
+                                </figcaption>
+                            </figure>
+                            <figure>
+                                <img src="images/rhodes.jpg" alt="two boats tied to dock in rhodes" />
+                                <div class="caption"><br>Rhodes</div>
+                                <figcaption>Rhodes
+                                    <small>Pier view</small>
+                                    <small class="xsmall">photo taken by Chris</small>
+                                </figcaption>
+                            </figure>
+                        </div> <!-- end of row -->
+                    </div> <!-- end of gallery -->
+                </section> <!-- end of ionian section -->
+
             </div> <!-- end of container -->
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="display:none;">
                 <symbol id="close" viewBox="0 0 18 18">
