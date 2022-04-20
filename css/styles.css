@@ -235,13 +235,13 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 .back-image {
-    background-size: 100%;
     background-position: center;
     width: 100%;
-    height: 20rem;
+    height: 30vh;
     background-image: url('../images/waves-g486bdbce9_1920.jpg');
+    background-attachment: fixed;
     background-size: cover;
-    display: flex;
+    background-repeat: no-repeat;
     justify-content: center;
 }
 
@@ -311,6 +311,16 @@ nav ul li a:visited:not(:only-child):after {
 
 }
 
+.back-image2 {
+    background-position: center;
+    width: 100%;
+    height: 30vh;
+    background-image: url('../images/athens-view.jpg');
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+}
 
 
 #testimonials {

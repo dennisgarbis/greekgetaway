@@ -150,8 +150,85 @@ nav ul li a:visited:not(:only-child):after {
     font-size: 4rem;
 }
 
+main {
+    background-color: #fff;
+}
+
 #top-container {
-    min-height: 60vh;
+    min-height: 20vh;
+}
+
+.athens-div {
+    display: flex;
+    background-color: #ccfa;
+    padding: 2%;
+}
+
+.athens-left {
+    flex-direction: column;
+    width: 50vw;
+}
+
+.athens-left>p {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.todo-list {
+    width: fit-content;
+    margin: .5rem auto;
+}
+
+.athens-right {
+    width: 50vw;
+}
+
+.athens-right>img {
+    width: 50%;
+}
+
+.salonica-div {
+    display: flex;
+    flex-direction: row-reverse;
+    background-color: #ccfa;
+    padding: 2%;
+    align-items: center;
+
+}
+
+.salonica-left {
+    flex-direction: column;
+    width: 50vw;
+}
+
+.salonica-left>p {
+    width: 50%;
+    margin: 1rem auto;
+}
+
+.salonica-right {
+    width: 50vw;
+}
+
+.salonica-right>img {
+    width: 50%;
+}
+
+
+
+.back-image {
+    background-image: url('../images/athens-acropolis.jpg');
+    /* Full height */
+    height: 40vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bottom-container {
+    min-height: 50vh;
 }
 
 footer {
@@ -257,7 +334,57 @@ footer {
         font-size: 1.5rem;
     }
 
+    .athens-div {
+        flex-direction: column;
+    }
 
+    .athens-left {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .athens-left>p {
+        width: 85%;
+        text-align: left;
+    }
+
+    .athens-right {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .athens-right>img {
+        width: 70%;
+    }
+
+
+
+
+    .salonica-div {
+        flex-direction: column;
+    }
+
+    .salonica-left {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .salonica-left>p {
+        width: 85%;
+        text-align: left;
+    }
+
+    .salonica-right {
+        width: 90%;
+        margin: 1rem auto;
+    }
+
+    .salonica-right>img {
+        width: 70%;
+    }
+
+    
+    
 }
 
 

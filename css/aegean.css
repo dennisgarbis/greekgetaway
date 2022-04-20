@@ -150,9 +150,30 @@ nav ul li a:visited:not(:only-child):after {
     font-size: 4rem;
 }
 
-#top-container {
-    min-height: 60vh;
+
+main {
+    background-color: #fff;
 }
+
+#top-container {
+    min-height: 20vh;
+}
+
+.back-image {
+    background-image: url('../images/santorini-night.jpg');
+    /* Full height */
+    height: 30vh;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#bottom-container {
+    min-height: 50vh;
+}
+
 
 footer {
     background-color: black;
