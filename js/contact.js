@@ -4,7 +4,7 @@ $(document).ready(function () {
     rules: {
       fname: {
         required: true,
-        rangelength: [3, 15]
+        rangelength: [2, 15]
       },
       lname: {
         required: true,
@@ -26,22 +26,21 @@ $(document).ready(function () {
     messages: {
       fname: {
         required: "Please type your first name.",
-        rangelength: "Your first name is at least 3 letters long, retard"
+        rangelength: "Please type at least 2 letters"
       },
       lname: {
         required: "Please type your first name.",
-        rangelength: "Your last name is at least 2 letters long, retard"
+        rangelength: "Your last name is at least 2 letters long"
       },
       email: {
-        required: "Please supply your e-mail address.",
-        email: "This is not a valid e-mail address."
+        required: "We need your e-mail address.",
+        email: "This is not a real e-mail address."
       },
       confirm_email: {
-        equalTo: 'Your emails do not match, dumbass.. Try again'
+        equalTo: 'Your emails do not match...try again'
       },
       phone: {
-        required: 'Please type a valid phone number',
-        rangelength: 'Password must be between 8 and 16 characters long.'
+        required: 'We need a valid phone number',
       }
     }, // end messages
     errorPlacement: function (error, element) {

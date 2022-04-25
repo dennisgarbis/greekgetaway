@@ -152,9 +152,81 @@ nav ul li a:visited:not(:only-child):after {
 
 .contact-form {
     background-color: white;
-    width: fit-content;
+    width: 60%;
     margin: 3rem auto;
     padding: 2rem 5rem;
+}
+
+input {
+    padding: 6px;
+    font-size: .8rem;
+    border-radius: 5px;
+    text-align: left;
+}
+
+input:focus {
+    box-shadow: 0 0 10px #04fb4a;
+}
+
+label {
+    width: 12rem;
+    display: inline-block;
+    text-align: right;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.names {
+    display: flex;
+    justify-content: center;
+
+}
+
+.names>div {
+    margin: 0;
+}
+
+
+h2 {
+    margin: 1rem auto;
+}
+
+input[type="radio"] {
+    margin: auto;
+}
+
+.radio-quest label {
+    text-align: left;
+    width: 120px;
+    margin: 1px auto;
+}
+
+.text>.message {
+    margin-right: 46%;
+}
+
+textarea {
+    width: 40%;
+    font-size: .9rem;
+    text-align: left;
+}
+
+.text {
+    margin: 1rem 0rem .5rem;
+}
+
+.text>label {
+    margin-right: 5px;
+}
+
+.star {
+    color: darkred;
+}
+
+.star-req {
+    color: darkred;
+    text-align: right;
+    margin-right: 25%;
 }
 
 form#signup div {
@@ -183,6 +255,46 @@ form, #submit {
     margin: 0 auto;
 }
 
+.buttons {
+    margin: .5rem auto;
+}
+
+.btn {
+    width: 8rem;
+    margin: 0 .8rem;
+    padding: .5rem .8rem;
+    border-radius: 10px;
+}
+
+.btn:hover {
+    cursor: pointer;
+}
+
+#reset {
+    background-color: black;
+    color: #fff;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+#reset:hover {
+    background-color: rgb(112, 8, 8);
+    letter-spacing: 2px;
+    transition: .5s;
+    transform: scale(1.15);
+}
+
+#submit {
+    background-color: darkgreen;
+    color: #fff;
+}
+
+#submit:hover {
+    background-color: rgb(12, 10, 109);
+    letter-spacing: 2px;
+    transition: .5s;
+    transform: scale(1.15);
+}
 
 footer {
     background-color: black;
@@ -279,6 +391,13 @@ footer {
         justify-content: center;
     }
 
+    .contact-form {
+        background-color: white;
+        width: 90%;
+        margin: 3rem auto;
+        padding: 2rem 0rem;
+    }
+
     .contact-heading {
         margin: 1rem auto 1.5rem;
         width: 30vw;
@@ -288,7 +407,47 @@ footer {
         font-size: 1.5rem;
     }
 
+    #signup {
+        width: 100%;
+    }
 
+    input {
+        padding: 6px;
+        font-size: .8rem;
+        border-radius: 5px;
+        text-align: left;
+        padding: 0;
+        width: 8rem;
+    }
+
+    .names {
+        flex-direction: column;
+    }
+
+    .names>div {
+        margin: 1rem 0;
+    }
+
+    label {
+        width: 8rem;
+    }
+    .bot-form {
+        flex-direction: column;
+    }
+
+    textarea {
+        width: 50%;
+    }
+
+    .star-req {
+        margin-right: 5%;
+    }
+
+    #button {
+        display: flex;
+        flex-direction: column;
+    }
+    
 }
 
 

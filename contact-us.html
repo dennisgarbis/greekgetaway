@@ -55,70 +55,93 @@
 
         </section>
         <section id="top-container">
-
-
             <div class="contact-form">
                 <h2>Please Fill Out This Form</h2>
                 <form action="process.html" method="post" name="signup" id="signup">
-                    <div>
-                        <label for="fname" class="label">First Name:</label><br>
-                        <input name="fname" type="text" id="fname" class="required">
-                    </div>
-                    <div>
-                        <label for="lname" class="label">Last Name:</label><br>
-                        <input name="lname" type="text" id="lname" class="required">
-                    </div>
-                    <div>
-                        <label for="email" class="label">E-mail:</label><br>
-                        <input name="email" type="text" id="email" class="required">
-                    </div>
-                    <div>
-                        <label for="confirm_email" class="label">Confirm Email:</label><br>
-                        <input name="confirm_email" type="text" id="confirm_email" class="required">
-                    </div>
-                    <div>
-                        <label for="phone" class="label">Phone:</label><br>
-                        <input name="phone" type="tel" id="phone">
-                    </div>
-                    <div id="check-area"><span class="label">What area are you interested in?</span><br>
-                        <input name="interest" type="checkbox" id="mainland" value="mainland" class="required"
-                            title="Please check at least 1 interest.">
-                        <label for="mainland">Mainland</label><br>
-                        <input name="interest" type="checkbox" id="peloponnese" value="peloponnese">
-                        <label for="peloponnese">Peloponnese</label><br>
-                        <input name="interest" type="checkbox" id="aegean" value="aegean">
-                        <label for="aegean">Aegean Islands</label><br>
-                        <input name="interest" type="checkbox" id="ionian" value="ionian">
-                        <label for="ionian">Ionian Islands</label><br>
-                    </div>
-                    <div>
-                        <label for="continent" class="label">What continent are you coming from?</label><br>
-                        <select name="continent" id="continent" class="required" title="Please choose a continent.">
-                            <option value="">--Please select one--</option>
-                            <option value="north america">North America</option>
-                            <option value="europe">Europe</option>
-                            <option value="south america">South America</option>
-                            <option value="asia">Asia</option>
-                            <option value="australia">Australia</option>
-                            <option value="antarctica">Antarctica</option>
-                        </select>
-                    </div>
-                    <div>
-                        <label for="comments" class="label">Comments</label><br>
-                        <textarea name="comments" cols="30" rows="5" id="comments"></textarea>
-                    </div>
-                    <div class="labelBlock">How would you like us to respond? </div>
-                    <div>
-                        <input type="radio" name="spam" id="yes" value="yes" class="required"
-                            title="Please select an option">
-                        <label for="yes">Email</label>
-                        <input type="radio" name="spam" id="definitely" value="definitely">
-                        <label for="definitely">Phone</label>
-                    </div>
-                    <div>
-                        <input type="submit" name="submit" id="submit" value="Submit">
-                    </div>
-                    </form>
+                    <div class="form-input">
+                        <div>
+                            <div class="names">
+                                <div class="first-name">
+                                    <label for="fname" class="label">First Name: <span class="star">*</span></label>
+                                    <input name="fname" type="text" id="fname" class="required">
+                                </div>
+                                <div class="last-name">
+                                    <label for="lname" class="label">Last Name: <span class="star">*</span></label>
+                                    <input name="lname" type="text" id="lname" class="required">
+                                </div>
+                            </div>
+                            <div class="names">
+                                <div class="email-address">
+                                    <label for="email" class="label">E-mail: <span class="star">*</span></label>
+                                    <input name="email" type="text" id="email" class="required">
+                                </div>
+                                <div>
+                                    <label for="confirm_email" class="label">Confirm Email: <span class="star">*</span></label>
+                                    <input name="confirm_email" type="text" id="confirm_email" class="required">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="names">
+                            <div class="phone-input">
+                                <label for="phone" class="label">Phone: <span class="star">*</span></label>
+                                <input name="phone" type="tel" id="phone">
+                            </div>
+                            <div class="confirm-phone">
+                                <label for="confirm-phone" class="label">Confirm Phone: <span class="star">*</span></label>
+                                <input name="confirm-phone" type="tel" id="confirm-phone" class="required">
+                            </div>
+                        </div>
+                        <div id="check-area"><span class="label">
+                                <h3>What area are you interested in?</h3>
+                            </span><br>
+                            <input name="interest" type="checkbox" id="mainland" value="mainland" class="required"
+                                title="Please check at least 1 interest.">
+                            <label for="mainland">Mainland</label><br>
+                            <input name="interest" type="checkbox" id="peloponnese" value="peloponnese">
+                            <label for="peloponnese">Peloponnese</label><br>
+                            <input name="interest" type="checkbox" id="aegean" value="aegean">
+                            <label for="aegean">Aegean Islands</label><br>
+                            <input name="interest" type="checkbox" id="ionian" value="ionian">
+                            <label for="ionian">Ionian Islands</label><br>
+                        </div>
+                        <div>
+                            <h3>What continent are you coming from?</h3>
+                            <label for="continent" class="label">
+                            </label><br>
+                            <select name="continent" id="continent" class="required" title="Please choose a continent.">
+                                <option value="">--Please select one--</option>
+                                <option value="north america">North America</option>
+                                <option value="europe">Europe</option>
+                                <option value="south america">South America</option>
+                                <option value="asia">Asia</option>
+                                <option value="australia">Australia</option>
+                                <option value="antarctica">Antarctica</option>
+                            </select>
+                        </div>
+                        <div class="radio-quest">
+                            <h3>How would you like us to respond?</h3>
+                            <div>
+                                <input type="radio" name="response" id="email-response" class="required"
+                                    title="Please select an option">
+                                <label for="email-response">Email</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="response" id="phone-response" class="required">
+                                <label for="phone-response">Phone</label>
+                            </div>
+                            <div>
+                                <label for="comments" class="label">Comments</label><br>
+                                <textarea name="comments" cols="30" rows="5" id="comments"></textarea>
+                            </div>
+                        </div>
+                        <p class="star-req">* required</p>
+                        <div>
+                            <div class="buttons">
+                                <button class="btn" id="reset" type="reset" aria-label="reset">Reset</button>
+                                <button class="btn" id="submit" type="submit" aria-label="submit">Submit</button>
+                            </div>
+                        </div>
+                </form>
 
             </div>
         </section>
