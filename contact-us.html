@@ -56,7 +56,85 @@
         </section>
         <section id="top-container">
             <div class="contact-form">
-                <h2>Please Fill Out This Form</h2>
+                <div class="flex">
+                    <form action="https://www.google.com" method="GET" id="signup">
+                        <div class="form-input">
+                            <h2>Please fill out this form</h2>
+
+                            <div>
+                                <div class="names">
+                                    <div class="first-name">
+                                        <label for="fname">First Name: <span class="star">*</span></label>
+                                        <input type="text" name="fname" id="fname" required>
+                                    </div>
+                                    <div class="last-name">
+                                        <label for="lname">Last Name: <span class="star">*</span></label>
+                                        <input type="text" name="lname" id="lname" required> <br>
+                                    </div>
+                                </div>
+                                <div class="names">
+                                    <div class="email-address">
+                                        <label for="email">Email: <span class="star">*</span></label>
+                                        <input type="email" name="email" id="email" required>
+                                    </div>
+                                    <div>
+                                        <label for="confirm_email" class="label">Confirm Email: <span
+                                                class="star">*</span></label>
+                                        <input name="confirm_email" type="text" id="confirm_email" class="required">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="names">
+                                <div class="phone-input">
+                                    <label for="phone" class="label">Phone: <span class="star">*</span></label>
+                                    <input name="phone" type="tel" id="phone">
+                                </div>
+                                <div class="confirm-phone">
+                                    <label for="confirm-phone" class="label">Confirm Phone: <span
+                                            class="star">*</span></label>
+                                    <input name="confirm-phone" type="tel" id="confirm-phone" class="required">
+                                </div>
+                            </div>
+                            <div class="radio-quest">
+                                <h3>How would you like me to reach back?</h3>
+                                <div>
+                                    <input type="radio" name="response" id="email-resp" required>
+                                    <label for="email-resp">email</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="response" id="phone-resp">
+                                    <label for="phone-resp">phone</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="response" id="no-resp">
+                                    <label for="no-resp">both!!</label>
+                                </div>
+                            </div>
+                            <div class="text">
+                                <label class="message" for="message"> Comments:</label><br>
+                                <textarea name="message" id="message" rows="5">Message...
+                                </textarea>
+                            </div>
+                            <p class="star-req">* required</p>
+                            <div>
+                                <div class="buttons">
+                                    <button class="btn" id="reset" type="reset" aria-label="reset">Reset</button>
+                                    <button class="btn" id="submit" type="submit" aria-label="submit">Submit</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div> <!-- end of flex class -->
+
+
+
+
+
+
+
+
+
+                <!-- <h2>Please Fill Out This Form</h2>
                 <form action="process.html" method="post" name="signup" id="signup">
                     <div class="form-input">
                         <div>
@@ -143,7 +221,7 @@
                             </div>
                         </div>
                     </div>
-                </form>
+                </form> -->
 
             </div>
         </section>
