@@ -22,7 +22,7 @@
             </div>
             <nav aria-label="navigation">
                 <h2 id="navigation">Links</h2>
-                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span></span></a></div>
+                <div class="nav-mobile"><a id="nav-toggle" href="#!"><span>''</span></a></div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="#">Destinations</a>
@@ -43,8 +43,7 @@
                 </ul>
             </nav>
         </div>
-        <section id="hero">
-            <header>
+        <header id="hero">
                 <a id="skip" href="#hero-button">skip to content..</a>
                 <!-- flex area -->
                 <div class="contact-heading">
@@ -52,8 +51,6 @@
                 </div>
 
             </header>
-
-        </section>
         <section id="top-container">
             <div class="contact-form">
                 <div class="flex">
@@ -84,15 +81,17 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="names">
-                                <div class="phone-input">
-                                    <label for="phone" class="label">Phone: <span class="star">*</span></label>
-                                    <input name="phone" type="tel" id="phone">
-                                </div>
-                                <div class="confirm-phone">
-                                    <label for="confirm-phone" class="label">Confirm Phone: <span
-                                            class="star">*</span></label>
-                                    <input name="confirm-phone" type="tel" id="confirm-phone" class="required">
+                            <div>
+                                <div class="names">
+                                    <div class="phone-input">
+                                        <label for="phone" class="label">Phone: <span class="star">*</span></label>
+                                        <input name="phone" type="tel" id="phone" required>
+                                    </div>
+                                    <div>
+                                        <label for="confirm_phone" class="label">Confirm Phone: <span
+                                                class="star">*</span></label>
+                                        <input name="confirm_phone" type="tel" id="confirm_phone" class="required">
+                                    </div>
                                 </div>
                             </div>
                             <div class="radio-quest">
@@ -126,102 +125,6 @@
                     </form>
                 </div> <!-- end of flex class -->
 
-
-
-
-
-
-
-
-
-                <!-- <h2>Please Fill Out This Form</h2>
-                <form action="process.html" method="post" name="signup" id="signup">
-                    <div class="form-input">
-                        <div>
-                            <div class="names">
-                                <div class="first-name">
-                                    <label for="fname" class="label">First Name: <span class="star">*</span></label>
-                                    <input name="fname" type="text" id="fname" class="required">
-                                </div>
-                                <div class="last-name">
-                                    <label for="lname" class="label">Last Name: <span class="star">*</span></label>
-                                    <input name="lname" type="text" id="lname" class="required">
-                                </div>
-                            </div>
-                            <div class="names">
-                                <div class="email-address">
-                                    <label for="email" class="label">E-mail: <span class="star">*</span></label>
-                                    <input name="email" type="text" id="email" class="required">
-                                </div>
-                                <div>
-                                    <label for="confirm_email" class="label">Confirm Email: <span
-                                            class="star">*</span></label>
-                                    <input name="confirm_email" type="text" id="confirm_email" class="required">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="names">
-                            <div class="phone-input">
-                                <label for="phone" class="label">Phone: <span class="star">*</span></label>
-                                <input name="phone" type="tel" id="phone">
-                            </div>
-                            <div class="confirm-phone">
-                                <label for="confirm-phone" class="label">Confirm Phone: <span
-                                        class="star">*</span></label>
-                                <input name="confirm-phone" type="tel" id="confirm-phone" class="required">
-                            </div>
-                        </div>
-                        <div id="check-area">
-                            <h3>What area are you interested in?</h3>
-                            <input name="interest" type="checkbox" id="mainland" value="mainland" class="required"
-                                title="Please check at least 1 interest.">
-                            <label for="mainland">Mainland</label><br>
-                            <input name="interest" type="checkbox" id="peloponnese" value="peloponnese">
-                            <label for="peloponnese">Peloponnese</label><br>
-                            <input name="interest" type="checkbox" id="aegean" value="aegean">
-                            <label for="aegean">Aegean Islands</label><br>
-                            <input name="interest" type="checkbox" id="ionian" value="ionian">
-                            <label for="ionian">Ionian Islands</label><br>
-                        </div>
-                        <div>
-                            <h3>What continent are you coming from?</h3>
-                            <label for="continent" class="label">
-                            </label><br>
-                            <select name="continent" id="continent" class="required" title="Please choose a continent.">
-                                <option value="">--Please select one--</option>
-                                <option value="north america">North America</option>
-                                <option value="europe">Europe</option>
-                                <option value="south america">South America</option>
-                                <option value="asia">Asia</option>
-                                <option value="australia">Australia</option>
-                                <option value="antarctica">Antarctica</option>
-                            </select>
-                        </div>
-                        <div class="radio-quest">
-                            <h3>How would you like us to respond?</h3>
-                            <div>
-                                <input type="radio" name="response" id="email-response" class="required"
-                                    title="Please select an option">
-                                <label for="email-response">Email</label>
-                            </div>
-                            <div>
-                                <input type="radio" name="response" id="phone-response" class="required">
-                                <label for="phone-response">Phone</label>
-                            </div>
-                            <div>
-                                <label for="comments" class="label">Comments</label><br>
-                                <textarea name="comments" cols="30" rows="5" id="comments"></textarea>
-                            </div>
-                        </div>
-                        <p class="star-req">* required</p>
-                        <div>
-                            <div class="buttons">
-                                <button class="btn" id="reset" type="reset" aria-label="reset">Reset</button>
-                                <button class="btn" id="submit" type="submit" aria-label="submit">Submit</button>
-                            </div>
-                        </div>
-                    </div>
-                </form> -->
 
             </div>
         </section>

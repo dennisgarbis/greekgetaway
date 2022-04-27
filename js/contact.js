@@ -21,6 +21,9 @@ $(document).ready(function () {
         required: true,
         digits: true,
         phoneUS: true
+      },
+      confirm_phone: {
+        equalTo: '#phone'
       }
     }, // end rules
     messages: {
@@ -37,11 +40,17 @@ $(document).ready(function () {
         email: "This is not a real e-mail address."
       },
       confirm_email: {
-        equalTo: 'Your emails do not match...try again'
+        equalTo: 'Your emails do not match'
       },
       phone: {
         required: 'We need a valid phone number',
+        phone: "that is not a real phone number"
+      },
+      confirm_phone: {
+        required: 'please confirm your number',
+        equalTo: "your phone number doesn\'t match"
       }
+
     }, // end messages
     errorPlacement: function (error, element) {
       if (element.is(":radio") || element.is(":checkbox")) {
