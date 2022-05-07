@@ -2,7 +2,9 @@
     box-sizing: border-box;
     margin: 0%;
     padding: 0;
+    line-height: 1.5;
     text-align: center;
+    font-family: 'Poppins', sans-serif;
 }
 
 #wrapper {
@@ -47,7 +49,7 @@ nav {
 #nav-flex {
     display: flex;
     align-items: center;
-    background-color: rgba(255, 255, 255, 0.862);
+    background-color: rgba(135, 206, 250, 0.96);
     position: -webkit-sticky;
     margin-top: 1rem;
     padding: 0;
@@ -91,7 +93,7 @@ nav li a {
 }
 
 nav a:hover {
-    border-bottom: 2px solid blue;
+    border-bottom: 2px solid darkblue;
 }
 
 nav ul li a:not(:only-child):after,
@@ -104,7 +106,7 @@ nav ul li a:visited:not(:only-child):after {
     position: absolute;
     display: none;
     margin-top: 1.2rem;
-    background-color: #fff;
+    background-color: lightskyblue;
     z-index: 1;
     box-shadow: 0 3px 12px rgba(0, 0, 0, 0.15);
 }
@@ -112,7 +114,6 @@ nav ul li a:visited:not(:only-child):after {
 .nav-dropdown>li {
     margin-top: 1rem;
     padding: .5rem 0;
-    border: thin solid black;
 }
 
 .nav-mobile {
@@ -136,27 +137,31 @@ nav ul li a:visited:not(:only-child):after {
     justify-content: center;
 }
 
-.flex-center {
-    margin-top: 10rem;
+.contact-heading {
+    margin: 10rem auto 0rem;
+    width: 20vw;
+    border-radius: 30px;
+    padding: .50rem;
 }
 
-#slogan {
+.contact-heading h1 {
     color: #fff;
+    background-color: rgba(0, 0, 0, 0.002);
     text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: 4rem;
     width: fit-content;
     margin: 0 auto;
-    text-align: center;
-    font-size: 2.5rem;
 }
 
-#site-title {
-    font-weight: 600;
+h2 {
+    font-size: 2rem;
 }
 
-#button {
+.button {
     color: darkblue;
     text-align: center;
-    margin-top: 2rem;
+    margin-top: 1rem;
 }
 
 #hero-button {
@@ -165,17 +170,17 @@ nav ul li a:visited:not(:only-child):after {
     text-decoration: none;
     padding: .5rem 1.1rem;
     border-radius: 30px;
-    box-shadow: 2px 3px rgba(84, 80, 80, 0.386);
+    transition: .5s ease-in-out;
+    box-shadow: 2px 2px 5px rgba(84, 80, 80, 0.386);
 }
 
 #hero-button:hover {
     background-color: white;
-    border: thin solid blue;
-    color: blue;
-    transition-duration: .7s;
+    border: thin solid darkblue;
+    color: darkblue;
 }
 
-#button:active {
+.button:active {
     transform: translateY(2px);
     transition-duration: .2s;
 }
@@ -183,12 +188,11 @@ nav ul li a:visited:not(:only-child):after {
 #hero-button:active {
     box-shadow: none;
     transition-duration: 0s;
-
 }
 
 #intro {
     display: flex;
-    background-color: #ABC0CC;
+    background-color: lightskyblue;
     padding: 4rem;
 }
 
@@ -196,6 +200,16 @@ nav ul li a:visited:not(:only-child):after {
     display: flex;
     flex-direction: column;
     width: 50%;
+}
+
+.wik-link {
+    color: darkblue;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wik-link:hover {
+    text-decoration: underline;
 }
 
 #about-map>h2 {
@@ -233,7 +247,7 @@ nav ul li a:visited:not(:only-child):after {
     padding: 1.25rem;
     border: 0;
     border-radius: 20px;
-    background-color: darkblue;
+    background-color: rgba(0, 0, 139, 0.75);
     color: #fff;
     cursor: pointer;
     text-decoration: none;
@@ -241,7 +255,7 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 #backtothetop-fixed:hover {
-    background-color: darkred;
+    background-color: darkblue;
     transform: translate(0%, 0%) scale(1.1);
     transition-duration: .4s;
     transition-timing-function: ease-in-out;
@@ -251,8 +265,8 @@ nav ul li a:visited:not(:only-child):after {
 .back-image {
     background-position: center;
     width: 100%;
-    height: 30vh;
-    background-image: url('../images/waves-g486bdbce9_1920.jpg');
+    height: 50vh;
+    background-image: url('../images/flag.jpg');
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
@@ -269,7 +283,8 @@ nav ul li a:visited:not(:only-child):after {
 }
 
 #tour-list {
-    background-color: #A6C2D0;
+    background-color: #fff;
+    padding-bottom: 10vh;
 }
 
 #tour-list>h2 {
@@ -286,53 +301,78 @@ nav ul li a:visited:not(:only-child):after {
 
 #tour-list-flex {
     display: flex;
-    justify-content: space-around;
     width: 100%;
-    padding-bottom: 2rem;
+    margin: 2rem auto;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .places-box {
-    width: 20%;
-    height: fit-content;
-    background-color: #88b7cf;
+    background-color: lightskyblue;
     box-shadow: 2px 2px 10px #000;
-    transition: .5s ease-in-out;
+    overflow: hidden;
+    transition: 500ms ease-in-out;
+    border-radius: 15px;
+    width: 20%;
+    flex-wrap: wrap;
 }
 
 .places-box:hover {
-    box-shadow: 5px 5px 30px black;
+    box-shadow: 5px 5px 15px black;
 }
 
-.places-box>img {
-    margin: 2rem auto 1rem;
+.project-image {
+    margin: 2rem auto 2rem;
     width: 85%;
-    height: 56%;
+    transition: transform 700ms, opacity 300ms ease-in-out;
+    border-radius: 10px;
+}
+
+.project-item {
+    display: block;
+}
+
+.project-image:hover {
+    transform: scale(1.05);
+    opacity: .8;
+    box-shadow: 3px 3px 10px black;
+}
+
+.project-item:focus .project-image {
+    transform: scale(1.1);
+    opacity: .8;
 }
 
 .tour-button {
-    margin: 0% auto;
+    margin: 0 auto;
     width: fit-content;
     padding: .5rem .8rem;
+    border-radius: 10px;
     background-color: #073161;
     color: white;
     font-weight: 300;
     text-decoration: none;
+    box-shadow: 1px 1px 5px rgb(117, 117, 117);
+    transition: all .3s ease-in;
 }
 
 .tour-button:hover {
-    background-color: lightblue;
+    background-color: white;
+    border: thin solid black;
     color: black;
+    box-shadow: none;
 }
 
 .places-box>p {
-    margin: auto;
+    margin: 1rem auto;
     padding: 1rem;
+    text-align: left;
 }
 
 .back-image2 {
     background-position: center;
     width: 100%;
-    height: 30vh;
+    height: 45vh;
     background-image: url('../images/athens-view.jpg');
     background-attachment: fixed;
     background-size: cover;
@@ -348,28 +388,19 @@ nav ul li a:visited:not(:only-child):after {
 
 
 
-
-
-
-#faq {
-    background-color: lightpink;
-    padding: 2rem;
-}
-
-
-
-
-
-
-
-
 footer {
     background-color: black;
     color: white;
     padding: 20px;
 }
 
-@media screen and (max-width: 1023px) {}
+@media screen and (max-width: 1200px) {
+    .places-box {
+        margin: 10px;
+        width: 40%;
+    }
+
+}
 
 @media screen and (max-width: 600px) {
     #wrapper {
@@ -411,18 +442,17 @@ footer {
         display: none;
         width: 100vw;
         margin: 0;
-        background-color: #2292BD;
+        background-color: lightskyblue;
     }
 
     .nav-links>li {
-        margin: 20px 0px;
-
+        padding: 10px 0;
+        border: thin solid black;
     }
-
+    
     .nav-links>li>a {
         padding: 4px 100px;
         margin: 0 auto;
-
     }
 
     .nav-dropdown {
@@ -431,16 +461,17 @@ footer {
     }
 
     .nav-dropdown>li {
-        background-color: #84b2c4;
+        background-color: rgb(93, 191, 253);
         margin: 0;
-        transition: all 300ms ease-in-out;
+        border: thin solid black;
+        padding: 10px 0;
     }
-
 
     nav li {
         list-style-type: none;
         margin: 0rem;
-        background-color: #2292BD;
+        background-color: lightskyblue;
+        padding: 0;
         width: 100%;
     }
 
@@ -464,18 +495,19 @@ footer {
         justify-content: center;
     }
 
-    .flex-center {
-        margin-top: 1.5rem;
+    .contact-heading {
+        margin: 1rem auto 1.5rem;
+        width: fit-content;
     }
 
-    #site-title {
-        font-size: 1.5rem;
+    .contact-heading h1 {
+        font-size: 2.5rem;
     }
 
-    #button {
+    .button {
         color: darkblue;
         text-align: center;
-        margin-top: 1.5rem;
+        margin-top: .5rem;
         font-size: .8rem;
     }
 
@@ -500,7 +532,7 @@ footer {
     }
 
     #mapGreece {
-        width: 100%;
+        width: 80%;
     }
 
     #intro-right {
@@ -531,6 +563,10 @@ footer {
         margin-bottom: 5rem;
     }
 
+    #tour-list-flex {
+        width: 100%;
+    }
+
     #tour-list>p {
         width: 90%;
         flex-direction: column;
@@ -548,22 +584,17 @@ footer {
     }
 
     #tour-list-flex {
-        flex-direction: column;
         margin: auto;
 
     }
 
     .places-box {
-        width: 90%;
-        height: 100%;
-        border: thin solid black;
-        background-color: rgb(185, 211, 241);
-        margin: 1rem auto;
+        width: 65%;
+        background-color: #88b7cf;
+        margin: 1.2rem auto;
     }
 
 }
-
-@media screen and (min-width: 799px) {}
 
 
 #nav-toggle {
