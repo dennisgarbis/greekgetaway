@@ -6,11 +6,10 @@
 }
 
 .btn {
-    height: 45px;
     line-height: 45px;
     font-size: 1.2rem;
     text-align: center;
-    padding: 0 30px;
+    padding: 0 1.5rem;
     border: none;
     cursor: pointer;
     display: inline-block;
@@ -21,7 +20,7 @@
 .btn.blue:hover {
     background-color: red;
     color: black;
-    transform: scale(1.1);
+    transform: scale(1.03);
     transition-duration: .4s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
@@ -38,7 +37,7 @@
     text-align: center;
     font-weight: 300;
     font-size: 2rem;
-    margin-bottom: 3.5rem;
+    margin-bottom: 1rem;
 }
 
 .membership-include-container .owl-dots .owl-dot {
@@ -58,7 +57,7 @@
 }
 
 .membership-include .item .right {
-    margin-bottom: 80px;
+    width: 95%;
 }
 
 .membership-include .item .right .image {
@@ -72,7 +71,6 @@
 
 .membership-include .item .right .image .user-photo {
     border-radius: 100%;
-    
 }
 
 .membership-include .item .right .image .text {

@@ -126,7 +126,6 @@ nav ul li a:visited:not(:only-child):after {
     width: 2.1rem;
 }
 
-
 #nav-toggle {
     position: relative;
     left: .1rem;

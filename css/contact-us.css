@@ -141,7 +141,7 @@ nav ul li a:visited:not(:only-child):after {
 
 .contact-heading {
     margin: 10rem auto 9rem;
-    width: 20vw;
+    width: fit-content;
     border-radius: 30px;
     padding: .50rem;
 }
@@ -150,12 +150,10 @@ nav ul li a:visited:not(:only-child):after {
     color: #fff;
     text-shadow: 2px 2px black;
     font-weight: bold;
-    font-family: Georgia, 'Times New Roman', Times, serif;
     font-size: 4rem;
     width: fit-content;
     margin: 0 auto;
 }
-
 
 .flex {
     display: flex;
