@@ -1,7 +1,6 @@
 .btn.blue {
     background-color: #ffffff;
     color: rgb(21, 17, 243);
-    border: thin solid red;
     border-radius: 25px;
 }
 
@@ -18,8 +17,8 @@
 }
 
 .btn.blue:hover {
-    background-color: red;
-    color: black;
+    background-color: darkblue;
+    color: white;
     transform: scale(1.03);
     transition-duration: .4s;
     transition-timing-function: ease-in-out;
@@ -87,12 +86,10 @@
     .membership-include .item {
         width: 100%;
         display: flex;
-      
-        border: thin solid white;
         flex-direction: column;
     }
 
-    .right > h3 {
+    .right>h3 {
         margin-top: .8rem;
     }
 
