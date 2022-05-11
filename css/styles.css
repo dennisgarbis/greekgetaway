@@ -15,33 +15,6 @@ h2 {
     text-align: center;
 }
 
-#hero-button {
-    background-color: white;
-    color: darkblue;
-    margin-top: 2rem;
-    text-decoration: none;
-    padding: .5rem 1.1rem;
-    border-radius: 30px;
-    transition: .5s ease-in-out;
-    box-shadow: 2px 2px 5px rgba(84, 80, 80, 0.386);
-}
-
-#hero-button:hover {
-    background-color: darkblue;
-    border: thin solid darkblue;
-    color: white;
-}
-
-.button:active {
-    transform: translateY(2px);
-    transition-duration: .2s;
-}
-
-#hero-button:active {
-    box-shadow: none;
-    transition-duration: 0s;
-}
-
 #intro {
     display: flex;
     background-color: lightskyblue;
@@ -52,16 +25,6 @@ h2 {
     display: flex;
     flex-direction: column;
     width: 50%;
-}
-
-.wik-link {
-    color: darkblue;
-    font-weight: 600;
-    text-decoration: none;
-}
-
-.wik-link:hover {
-    text-decoration: underline;
 }
 
 #about-map>h2 {

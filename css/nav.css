@@ -193,8 +193,66 @@ ul li ul li {
     text-shadow: 3px 3px darkblue;
 }
 
+.submit-heading {
+    margin: 4rem auto 0rem;
+    width: fit-content;
+    border-radius: 30px;
+    padding: .50rem;
+}
+
+.submit-heading h1 {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.002);
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+    font-size: 4rem;
+    width: fit-content;
+    margin: 5rem auto 0;
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-shadow: 3px 3px darkblue;
+}
+
+.submit-heading h2 {
+    width: 50%;
+    padding: 5rem 0 2rem;
+    font-size: 1.5rem;
+    margin: 0 auto;
+    color: white;
+    text-shadow: 2px 2px darkblue;
+}
+
+#hero-button {
+    background-color: white;
+    color: darkblue;
+    margin-top: 2rem;
+    text-decoration: none;
+    padding: .5rem;
+    border-radius: 30px;
+    transition: .5s ease-in-out;
+}
+
+#hero-button:hover {
+    background-color: darkblue;
+    border: thin solid darkblue;
+    color: white;
+    box-shadow: 3px 3px 10px rgb(0, 0, 0);
+}
+
 main {
     background-color: #fff;
+}
+
+
+.wik-link {
+    color: darkred;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.wik-link:hover {
+    color: darkblue;
+    text-decoration: underline;
 }
 
 h2 {
@@ -378,8 +436,30 @@ footer {
         font-size: 2.5rem;
     }
 
+    .submit-heading {
+        margin: 1rem auto 0rem;
+        width: fit-content;
+        border-radius: 30px;
+        padding: .50rem;
+    }
+
+    .submit-heading h1 {
+        font-size: 2.5rem;
+        margin: 0 auto;
+    }
+
+    .submit-heading h2 {
+        padding: 1rem 0;
+        font-size: 1rem;
+    }
+
     h2 {
         font-size: 1.8rem;
+    }
+
+    #hero-button {
+        font-size: .7rem;
+        padding: .3rem;
     }
 
     #top-container>p {
