@@ -17,6 +17,10 @@ body {
     background-size: cover;
 }
 
+table {
+    margin: 0 auto;
+}
+
 @media screen and (max-width: 600px) {
    
     #hero {

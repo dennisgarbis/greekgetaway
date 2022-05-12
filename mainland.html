@@ -9,6 +9,8 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="/path/to/cdn/jquery-ui.min.css" />
+    <link rel="stylesheet" href="css/jquery.sheetjs.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/mainland.css">
     <title>Mainland</title>
@@ -52,14 +54,19 @@
         <main>
             <section id="top-container">
                 <h2>Mainland and Northern Greece</h2>
-                <p>The mainland of Greece consists of central and northern Greece. It is a rugged area filled with mountains, but with plenty of small villages and towns to visit.</p>
+                <p>The mainland of Greece consists of central and northern Greece. It is a rugged area filled with
+                    mountains, but with plenty of small villages and towns to visit.</p>
             </section>
             <hr>
             <section aria-label="list of cities in mainland greece" id="main-content">
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Athens</h3>
-                        <p>The capital of Greece, Athens is a great city to visit and see all the historical sites. Seen from all over the city, The Parthenon perched high atop the Acropolis stands out as a marvel to ancient architecture. With numerous museums and many neighborhoods to visit, <a href="https://wikitravel.org/en/Athens" target="_blank" class="wik-link">Athens</a> is worth spending a few days to see everything she has to offer.</p>
+                        <p>The capital of Greece, Athens is a great city to visit and see all the historical sites. Seen
+                            from all over the city, The Parthenon perched high atop the Acropolis stands out as a marvel
+                            to ancient architecture. With numerous museums and many neighborhoods to visit, <a
+                                href="https://wikitravel.org/en/Athens" target="_blank" class="wik-link">Athens</a> is
+                            worth spending a few days to see everything she has to offer.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>The Acropolis</li>
@@ -78,7 +85,11 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Thessaloniki</h3>
-                        <p>At about a million inhabitants, it is considered Greece's cultural capital, renowned for its festivals, events and vibrant cultural life. With an over 3,000 year history, <a href="https://wikitravel.org/en/Thessaloniki" target="_blank" class="wik-link">Thessaloniki</a> has plenty to see and do for every type of traveler.</p>
+                        <p>At about a million inhabitants, it is considered Greece's cultural capital, renowned for its
+                            festivals, events and vibrant cultural life. With an over 3,000 year history, <a
+                                href="https://wikitravel.org/en/Thessaloniki" target="_blank"
+                                class="wik-link">Thessaloniki</a> has plenty to see and do for every type of traveler.
+                        </p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>White Tower</li>
@@ -102,7 +113,10 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Meteora</h3>
-                        <p>With a total of 24 monastaries and a name meaning "middle of the sky", <a href="https://wikitravel.org/en/Meteora" target="_blank" class="wik-link">Meteora</a> is a sight to behold. Built from the 14th to the 16th centuries, 6 of these monastaries remain perched above solid rock formed millions of years ago.</p>
+                        <p>With a total of 24 monastaries and a name meaning "middle of the sky", <a
+                                href="https://wikitravel.org/en/Meteora" target="_blank" class="wik-link">Meteora</a> is
+                            a sight to behold. Built from the 14th to the 16th centuries, 6 of these monastaries remain
+                            perched above solid rock formed millions of years ago.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Great Meteoron Monastery</li>
@@ -122,7 +136,10 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Halkidiki</h3>
-                        <p>With three finger like sections coming outwards towards the water, <a href="https://wikitravel.org/en/Chalkidiki" target="_blank" class="wik-link">Halkidiki</a> boasts excellent beaches for all types of visitors. Mount Athos, with over 1800 monks, is a site for male visitors only.</p>
+                        <p>With three finger like sections coming outwards towards the water, <a
+                                href="https://wikitravel.org/en/Chalkidiki" target="_blank"
+                                class="wik-link">Halkidiki</a> boasts excellent beaches for all types of visitors. Mount
+                            Athos, with over 1800 monks, is a site for male visitors only.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Mount Athos</li>
@@ -140,7 +157,10 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Mount Olympus</h3>
-                        <p>The best hiking and views to be found anywhere in Greece, <a href="https://wikitravel.org/en/Olympos_National_Park" target="_blank" class="wik-link">Mt. Olympus</a> is a great place for nature enthusiasts to try their luck at the highest peaks Greece has to offer. </p>
+                        <p>The best hiking and views to be found anywhere in Greece, <a
+                                href="https://wikitravel.org/en/Olympos_National_Park" target="_blank"
+                                class="wik-link">Mt. Olympus</a> is a great place for nature enthusiasts to try their
+                            luck at the highest peaks Greece has to offer. </p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Hike</li>
@@ -156,10 +176,79 @@
             </section>
             <div class="back-image"></div>
             <section id="bottom-container" aria-label="sample itinerary">
-                <h2>A 10 Day Tour Example</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque, culpa obcaecati eaque maxime
-                    corporis? Esse ex explicabo iste natus quasi consequatur reiciendis, inventore deserunt eos eveniet
-                    distinctio minus velit.</p>
+                <h2>List of Cities, Population, and Temp.</h2>
+                <table class="sheetjs">
+                    <thead>
+                        <tr>
+                            <th>No</th>
+                            <th>City</th>
+                            <th>Region</th>
+                            <th>Population</th>
+                            <th>Avg<br>Temp Jan</th>
+                            <th>Avg<br>Temp July</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>1</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Athens" target="_blank"
+                                    class="wik-link">Athens</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Attica_(region)" target="_blank"
+                                    class="wik-link">Attica</a> </td>
+                            <td>664,046</td>
+                            <td>55.9&deg;F</td>
+                            <td>93.7&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Thessaloniki" target="_blank" class="wik-link">Thessaloniki</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Central_Macedonia" target="_blank" class="wik-link">Central Macedonia</a></td>
+                            <td>315,196</td>
+                            <td>48.7&deg;F</td>
+                            <td>89.1&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>3</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Larissa" target="_blank" class="wik-link">Larissa</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Thessaly" target="_blank" class="wik-link">Thessaly</a></td>
+                            <td>144,651</td>
+                            <td>50.4&deg;F</td>
+                            <td>92.1&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>4</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Komotini" target="_blank" class="wik-link">Komotini</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Eastern_Macedonia_and_Thrace" target="_blank" class="wik-link">Eastern Macedonia<br>& Thrace</a></td>
+                            <td>50,990</td>
+                            <td>48.0&deg;F</td>
+                            <td>88.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>5</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Lamia_(city)" target="_blank" class="wik-link">Lamia</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Central_Greece_(region)" target="_blank" class="wik-link">Central Greece</a></td>
+                            <td>52,006</td>
+                            <td>53.2&deg;F</td>
+                            <td>91.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>6</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Ioannina" target="_blank" class="wik-link">Ioannina</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Epirus_(region)" target="_blank" class="wik-link">Epirus</a></td>
+                            <td>65,574</td>
+                            <td>48.0&deg;F</td>
+                            <td>88.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <th>7</th>
+                            <td><a href="https://en.wikipedia.org/wiki/Kozani" target="_blank" class="wik-link">Kozani</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Western_Macedonia" target="_blank" class="wik-link">Western Macedonia</a></td>
+                            <td>41,066</td>
+                            <td>43.0&deg;F</td>
+                            <td>84.7&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
 
 
             </section>
@@ -178,10 +267,9 @@
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="js/jquery.min.js"></script>
     <script src="js/jquery.backtothetop.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/function.js"></script>
+    <script src="js/jquery.sheetjs.js"></script>
 </body>
 
 </html>

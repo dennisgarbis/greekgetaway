@@ -32,4 +32,4 @@ popup = {
     }
   }
   
-popup.init()
+  popup.init()

@@ -370,7 +370,7 @@ h2 {
 }
 
 #bottom-container {
-    min-height: 50vh;
+    padding-bottom: 3rem;
 }
 
 #bottom-container>p {
@@ -453,7 +453,7 @@ footer {
     }
 
     h2 {
-        font-size: 1.8rem;
+        font-size: 1.7rem;
     }
 
     #hero-button {
@@ -515,6 +515,10 @@ footer {
 
     .salonica-right>img {
         width: 70%;
+    }
+
+    #bottom-container {
+        padding-bottom: 3rem;
     }
 
     #bottom-container>p {
