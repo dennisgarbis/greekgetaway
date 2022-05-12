@@ -195,6 +195,10 @@ figure>img {
     letter-spacing: 1px;
 }
 
+.popup .caption {
+    display: none;
+}
+
 .popup figure figcaption .xsmall {
     font-size: .5rem;
 }
