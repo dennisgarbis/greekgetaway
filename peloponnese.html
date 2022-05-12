@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/jquery.sheetjs.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/peloponnese.css">
     <title>Peloponnese</title>
@@ -52,14 +53,20 @@
         <main>
             <section id="top-container">
                 <h2>Peloponnese and Southern Greece</h2>
-                <p>A large, mountainous region located in the southern portion of Greece, the peloponnese peninsula is connected to the mainland of Greece by the Isthmus of Corinth. There are many cities and ancient sites to visit.</p>
+                <p>A large, mountainous region located in the southern portion of Greece, the peloponnese peninsula is
+                    connected to the mainland of Greece by the Isthmus of Corinth. There are many cities and ancient
+                    sites to visit.</p>
             </section>
             <hr>
             <section aria-label="list of cities in mainland greece" id="main-content">
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Nafplio</h3>
-                        <p>A small, picturesque former capital of Greece, <a href="https://wikitravel.org/en/Nafplio" target="_blank" class="wik-link">Nafplio</a> is a great place for couples to enjoy the romantic streets with a reminder of its Venetian rule hundreds of years ago. Plenty to see here, from climbing the steps of Palamidi, to visiting numerous bars and beaches, the adventure never ends.</p>
+                        <p>A small, picturesque former capital of Greece, <a href="https://wikitravel.org/en/Nafplio"
+                                target="_blank" class="wik-link">Nafplio</a> is a great place for couples to enjoy the
+                            romantic streets with a reminder of its Venetian rule hundreds of years ago. Plenty to see
+                            here, from climbing the steps of Palamidi, to visiting numerous bars and beaches, the
+                            adventure never ends.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Palamidi Castle</li>
@@ -80,7 +87,10 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Monemvasia</h3>
-                        <p>Located on a small island off the southeastern portion of the Peloponnese, <a href="https://en.wikipedia.org/wiki/Monemvasia" target="_blank" class="wik-link">Monemvasia</a> has been called the Gibralter of the east with its high mountain peak and beautiful city tucked in the shadows.</p>
+                        <p>Located on a small island off the southeastern portion of the Peloponnese, <a
+                                href="https://en.wikipedia.org/wiki/Monemvasia" target="_blank"
+                                class="wik-link">Monemvasia</a> has been called the Gibralter of the east with its high
+                            mountain peak and beautiful city tucked in the shadows.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Monemvasia Fortress</li>
@@ -103,7 +113,10 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Sparta</h3>
-                        <p>THIS IS <a href="https://wikitravel.org/en/Sparta" target="_blank" class="wik-link">SPARTA</a>!!! A small town located in the southern Peloponnese, the present day Sparta was built in 1834 near the original city. Not much to see here except for some small museums and my yiayia's house further north.</p>
+                        <p>THIS IS <a href="https://wikitravel.org/en/Sparta" target="_blank"
+                                class="wik-link">SPARTA</a>!!! A small town located in the southern Peloponnese, the
+                            present day Sparta was built in 1834 near the original city. Not much to see here except for
+                            some small museums and my yiayia's house further north.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Leonidas Monument</li>
@@ -121,7 +134,9 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Olympia</h3>
-                        <p>The original Olympic Games were started here in 776 BC. The Olympic flame is lit here in <a href="https://wikitravel.org/en/Olympia_(Greece)" target="_blank" class="wik-link">Olympia</a> from a mirror reflecting the sunlight. </p>
+                        <p>The original Olympic Games were started here in 776 BC. The Olympic flame is lit here in <a
+                                href="https://wikitravel.org/en/Olympia_(Greece)" target="_blank"
+                                class="wik-link">Olympia</a> from a mirror reflecting the sunlight. </p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Archaeological Site</li>
@@ -139,7 +154,9 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Mystras</h3>
-                        <p><a href="https://en.wikipedia.org/wiki/Mystras" target="_blank" class="wik-link">Mystras</a> is an ancient town that has endured numerous rulers and today is only inhabited by nuns. Most of the churches are still standing, with many underoging restorations.</p>
+                        <p><a href="https://en.wikipedia.org/wiki/Mystras" target="_blank" class="wik-link">Mystras</a>
+                            is an ancient town that has endured numerous rulers and today is only inhabited by nuns.
+                            Most of the churches are still standing, with many underoging restorations.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Palace of Despots</li>
@@ -155,20 +172,85 @@
                 </div>
             </section>
             <div class="back-image"></div>
-            <section id="bottom-container" aria-label="sample itinerary">
-                <h2>A 10 Day Tour Example</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque, culpa obcaecati eaque maxime
-                    corporis? Esse ex explicabo iste natus quasi consequatur reiciendis, inventore deserunt eos eveniet
-                    distinctio minus velit.</p>
-
-
+            <section id="bottom-container" aria-label="table of cities">
+                <h2>List of Cities, Population, and Temp.</h2>
+                <table class="sheetjs">
+                    <thead>
+                        <tr>
+                            <th>City</th>
+                            <th>Region</th>
+                            <th>Population</th>
+                            <th>Avg<br>Temp Jan</th>
+                            <th>Avg<br>Temp July</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Patras" target="_blank"
+                                    class="wik-link">Patras</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Western_Greece" target="_blank"
+                                    class="wik-link">Western Greece</a> </td>
+                            <td>170,896</td>
+                            <td>58.1&deg;F</td>
+                            <td>86.2&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Kalamata" target="_blank"
+                                    class="wik-link">Kalamata</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Messenia" target="_blank"
+                                    class="wik-link">Messenia</a></td>
+                            <td>315,196</td>
+                            <td>59.5&deg;F</td>
+                            <td>89.8&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Corinth" target="_blank"
+                                    class="wik-link">Corinth</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Corinthia" target="_blank"
+                                    class="wik-link">Corinthia</a></td>
+                            <td>38,132</td>
+                            <td>56.2&deg;F</td>
+                            <td>89.2&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Tripoli,_Greece" target="_blank"
+                                    class="wik-link">Tripoli</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Arcadia_(regional_unit)" target="_blank"
+                                    class="wik-link">Arcadia</a></td>
+                            <td>30,912</td>
+                            <td>49.3&deg;F</td>
+                            <td>86.7&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Nafplio" target="_blank"
+                                    class="wik-link">Nafplio</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Argolis" target="_blank"
+                                    class="wik-link">Argolis</a></td>
+                            <td>18,910</td>
+                            <td>51.2&deg;F</td>
+                            <td>87.6&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Myloi,_Argolis" target="_blank"
+                                    class="wik-link">Myloi</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Argolis" target="_blank"
+                                    class="wik-link">Argolis</a></td>
+                            <td>741</td>
+                            <td>51.3&deg;F</td>
+                            <td>88.1&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Sellasia" target="_blank"
+                                    class="wik-link">Sellasia</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Laconia" target="_blank"
+                                    class="wik-link">Laconia</a></td>
+                            <td>311</td>
+                            <td>60.3&deg;F</td>
+                            <td>92.3&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
-
-
-
-
-
-
         </main>
         <footer aria-label="contentinfo">
             <p>&#169; 2022 WEB 235</p>
@@ -180,9 +262,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.YACSSTooltip.min.js"></script>
     <script src="js/jquery.backtothetop.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/function.js"></script>
+    <script src="js/jquery.sheetjs.js"></script>
 </body>
 
 </html>

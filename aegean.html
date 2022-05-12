@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/jquery.sheetjs.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/aegean.css">
     <title>Aegean Islands</title>
@@ -53,14 +54,19 @@
         <main>
             <section id="top-container">
                 <h2>Cyclades, Dodecanese, Sporades, North Aegean, Crete</h2>
-                <p>Some of the most beautiful islands in the world are found here. Thousands of islands are spread out throughout the Aegean Sea reaching all the way to the shores of Turkey. Listed below is an island for everyone to enjoy.</p>
+                <p>Some of the most beautiful islands in the world are found here. Thousands of islands are spread out
+                    throughout the Aegean Sea reaching all the way to the shores of Turkey. Listed below is an island
+                    for everyone to enjoy.</p>
             </section>
             <hr>
             <section aria-label="list of cities in mainland greece" id="main-content">
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Santorini</h3>
-                        <p>Located in the Cyclades, <a href="https://wikitravel.org/en/Santorini" target="_blank" class="wik-link">Santorini</a> is a volcanic island with breathtaking sunsets and beautiful views, perfect for romantic travelers. Black sand beaches and scenic scooter rides, along with postcard towns are found here.</p>
+                        <p>Located in the Cyclades, <a href="https://wikitravel.org/en/Santorini" target="_blank"
+                                class="wik-link">Santorini</a> is a volcanic island with breathtaking sunsets and
+                            beautiful views, perfect for romantic travelers. Black sand beaches and scenic scooter
+                            rides, along with postcard towns are found here.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Sunset in Oia</li>
@@ -81,7 +87,10 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Mykonos</h3>
-                        <p>If you want to party all night until the sun comes up, and keep going some more, then <a href="https://wikitravel.org/en/Mykonos" target="_blank" class="wik-link">Mykonos</a> is perfect for you. One of the smallest islands found in the Cyclades, it has a reputation for party goers and beautiful scenery.</p>
+                        <p>If you want to party all night until the sun comes up, and keep going some more, then <a
+                                href="https://wikitravel.org/en/Mykonos" target="_blank" class="wik-link">Mykonos</a> is
+                            perfect for you. One of the smallest islands found in the Cyclades, it has a reputation for
+                            party goers and beautiful scenery.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Agrari Beach</li>
@@ -104,7 +113,11 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Rhodes</h3>
-                        <p>Located just off the southwestern coast of Turkey you will find one of the bigger Greek islands, and the biggest in the dodecanese. <a href="https://wikitravel.org/en/Rhodes" target="_blank" class="wik-link">Rhodes</a> is known for its sunny days and ancient sites. Extremely popular with tourists, it is a great island to visit, but can be very busy during peak travel season.</p>
+                        <p>Located just off the southwestern coast of Turkey you will find one of the bigger Greek
+                            islands, and the biggest in the dodecanese. <a href="https://wikitravel.org/en/Rhodes"
+                                target="_blank" class="wik-link">Rhodes</a> is known for its sunny days and ancient
+                            sites. Extremely popular with tourists, it is a great island to visit, but can be very busy
+                            during peak travel season.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Palace of Grand Master</li>
@@ -123,7 +136,10 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Lesbos</h3>
-                        <p>Just off the west coast of Turkey is the Greek island of <a href="https://wikitravel.org/en/Lesvos" target="_blank" class="wik-link">Lesbos</a>. It is the birthplace of numerous poets and is the third largest islands in Greece, after Crete and Evia. Famous for ouzo, Lesbos has a great tradition and rich history.</p>
+                        <p>Just off the west coast of Turkey is the Greek island of <a
+                                href="https://wikitravel.org/en/Lesvos" target="_blank" class="wik-link">Lesbos</a>. It
+                            is the birthplace of numerous poets and is the third largest islands in Greece, after Crete
+                            and Evia. Famous for ouzo, Lesbos has a great tradition and rich history.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Castle of Molyvos</li>
@@ -141,7 +157,9 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Paros</h3>
-                        <p>One of the most beautiful islands in Greece, and the world, <a href="https://wikitravel.org/en/Paros" target="_blank" class="wik-link">Paros</a> is known for its charming villages, beautiful beaches, and fine white marble.</p>
+                        <p>One of the most beautiful islands in Greece, and the world, <a
+                                href="https://wikitravel.org/en/Paros" target="_blank" class="wik-link">Paros</a> is
+                            known for its charming villages, beautiful beaches, and fine white marble.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Naoussa</li>
@@ -157,14 +175,86 @@
                 </div>
             </section>
             <div class="back-image"></div>
-            <section id="bottom-container" aria-label="sample itinerary">
-                <h2>A 10 Day Tour Example</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque, culpa obcaecati eaque maxime
-                    corporis? Esse ex explicabo iste natus quasi consequatur reiciendis, inventore deserunt eos eveniet
-                    distinctio minus velit.</p>
-
-
+            <section id="bottom-container" aria-label="table of cities">
+                <h2>List of Cities, Population, and Temp.</h2>
+                <table class="sheetjs">
+                    <thead>
+                        <tr>
+                            <th>Island</th>
+                            <th>Capital</th>
+                            <th>Population</th>
+                            <th>Avg<br>Temp Jan</th>
+                            <th>Avg<br>Temp July</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Crete" target="_blank" class="wik-link">Crete</a>
+                            </td>
+                            <td><a href="https://en.wikipedia.org/wiki/Heraklion" target="_blank"
+                                    class="wik-link">Heraklion</a> </td>
+                            <td>636,504</td>
+                            <td>59.5&deg;F</td>
+                            <td>83.7&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Euboea" target="_blank" class="wik-link">Evia</a>
+                            </td>
+                            <td><a href="httpshttps://en.wikipedia.org/wiki/Chalcis" target="_blank"
+                                    class="wik-link">Chalcis</a></td>
+                            <td>191,206</td>
+                            <td>55.2&deg;F</td>
+                            <td>90.7&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Lesbos" target="_blank"
+                                    class="wik-link">Lesbos</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Mytilene" target="_blank"
+                                    class="wik-link">Mytilene</a></td>
+                            <td>114,880</td>
+                            <td>54.0&deg;F</td>
+                            <td>88.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Rhodes" target="_blank"
+                                    class="wik-link">Rhodes</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Rhodes_(city)" target="_blank"
+                                    class="wik-link">Rhodes</a></td>
+                            <td>115,490</td>
+                            <td>59.2&deg;F</td>
+                            <td>86.7&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Chios" target="_blank" class="wik-link">Chios</a>
+                            </td>
+                            <td><a href="https://en.wikipedia.org/wiki/Chios_(town)" target="_blank"
+                                    class="wik-link">Chios</a></td>
+                            <td>54,030</td>
+                            <td>55.0&deg;F</td>
+                            <td>90.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Santorini" target="_blank"
+                                    class="wik-link">Santorini</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Fira" target="_blank" class="wik-link">Fira</a>
+                            </td>
+                            <td>15,550</td>
+                            <td>57.0&deg;F</td>
+                            <td>84.0&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Mykonos" target="_blank"
+                                    class="wik-link">Mykonos</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Mykonos" target="_blank"
+                                    class="wik-link">Mykonos</a></td>
+                            <td>10,134</td>
+                            <td>56.7&deg;F</td>
+                            <td>80.2&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
             </section>
+
         </main>
         <footer aria-label="contentinfo">
             <p>&#169; 2022 WEB 235</p>
@@ -176,9 +266,7 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.YACSSTooltip.min.js"></script>
     <script src="js/jquery.backtothetop.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/function.js"></script>
+    <script src="js/jquery.sheetjs.js"></script>
 </body>
 
 </html>

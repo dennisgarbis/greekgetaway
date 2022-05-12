@@ -382,6 +382,11 @@ h2 {
 }
 
 
+table {
+    margin: 0 auto;
+    width: 50vw;
+}
+
 
 
 footer {

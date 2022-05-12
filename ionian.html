@@ -9,6 +9,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="css/jquery.sheetjs.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/ionian.css">
     <title>Ionian Islands</title>
@@ -52,14 +53,20 @@
         <main>
             <section id="top-container">
                 <h2>Kefalonia, Zakynthos, Lefkada, Ithaca, Corfu</h2>
-                <p>Consisting of seven islands, the Ionian region is located between Italy and Greece. It has overcome many different rulers, from the Romans, Venetians, British, and Germans, and back to the Greeks. Each island has its own unique features, and are some of the largest in Greece.</p>
+                <p>Consisting of seven islands, the Ionian region is located between Italy and Greece. It has overcome
+                    many different rulers, from the Romans, Venetians, British, and Germans, and back to the Greeks.
+                    Each island has its own unique features, and are some of the largest in Greece.</p>
             </section>
             <hr>
             <section aria-label="list of cities in mainland greece" id="main-content">
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Kefalonia</h3>
-                        <p>Breathtaking scenery, lush forests, and high cliffs adorn the largest Ionian Island of <a href="https://wikitravel.org/en/Kefalonia" target="_blank" class="wik-link">Kefalonia</a>. Many ports connect Kefalonia to the mainland and other islands. The world famous Myrtos Beach is here, as well as many others. Steep mountains, small villages, and some of the best views are found here.</p>
+                        <p>Breathtaking scenery, lush forests, and high cliffs adorn the largest Ionian Island of <a
+                                href="https://wikitravel.org/en/Kefalonia" target="_blank"
+                                class="wik-link">Kefalonia</a>. Many ports connect Kefalonia to the mainland and other
+                            islands. The world famous Myrtos Beach is here, as well as many others. Steep mountains,
+                            small villages, and some of the best views are found here.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Myrtos Beach</li>
@@ -82,7 +89,10 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Zakynthos</h3>
-                        <p>Located just south of Kefalonia is <a href="https://wikitravel.org/en/Zakynthos" target="_blank" class="wik-link">Zakynthos</a>. Steep mountains are found on one side while its most famous beach is found on the other. St. Dionysios, my saint's name, is also from this island.</p>
+                        <p>Located just south of Kefalonia is <a href="https://wikitravel.org/en/Zakynthos"
+                                target="_blank" class="wik-link">Zakynthos</a>. Steep mountains are found on one side
+                            while its most famous beach is found on the other. St. Dionysios, my saint's name, is also
+                            from this island.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Navagio Beach</li>
@@ -107,7 +117,10 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Lefkada</h3>
-                        <p>Although it is technically an island, <a href="https://wikitravel.org/en/Lefkada" target="_blank" class="wik-link">Lefkada</a> is connected to the mainland by a small causeway and a bridge. Plenty of beaches, and of course steep cliffs like the other islands, can be found here. </p>
+                        <p>Although it is technically an island, <a href="https://wikitravel.org/en/Lefkada"
+                                target="_blank" class="wik-link">Lefkada</a> is connected to the mainland by a small
+                            causeway and a bridge. Plenty of beaches, and of course steep cliffs like the other islands,
+                            can be found here. </p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Porto Katsiki</li>
@@ -128,7 +141,9 @@
                 <div class="salonica-div">
                     <div class="salonica-left">
                         <h3>Ithaca</h3>
-                        <p><a href="https://wikitravel.org/en/Ithaca_(Greece)" target="_blank" class="wik-link">Ithaka</a> is home to Homer's Odysseus. Crystal clear water, beaches only accessible by sea, and tranquil towns offer a relaxing vacation.</p>
+                        <p><a href="https://wikitravel.org/en/Ithaca_(Greece)" target="_blank"
+                                class="wik-link">Ithaka</a> is home to Homer's Odysseus. Crystal clear water, beaches
+                            only accessible by sea, and tranquil towns offer a relaxing vacation.</p>
                         <h4>Things to See</h4>
                         <ul class="todo-list">
                             <li>Filiatro Beach</li>
@@ -145,7 +160,9 @@
                 <div class="athens-div">
                     <div class="athens-left">
                         <h3>Corfu</h3>
-                        <p>Also known as Kerkira, <a href="https://wikitravel.org/en/Corfu" target="_blank" class="wik-link">Corfu</a> is the northernmost of the Ionian Islands. Many foreign powers have had control of the island, including the Venetians, French, and British.</p>
+                        <p>Also known as Kerkira, <a href="https://wikitravel.org/en/Corfu" target="_blank"
+                                class="wik-link">Corfu</a> is the northernmost of the Ionian Islands. Many foreign
+                            powers have had control of the island, including the Venetians, French, and British.</p>
                         <h4>Things to See/Do</h4>
                         <ul class="todo-list">
                             <li>Corfu Old Town</li>
@@ -161,11 +178,57 @@
                 </div>
             </section>
             <div class="back-image"></div>
-            <section id="bottom-container" aria-label="sample itinerary">
-                <h2>A 10 Day Tour Example</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum cumque, culpa obcaecati eaque maxime
-                    corporis? Esse ex explicabo iste natus quasi consequatur reiciendis, inventore deserunt eos eveniet
-                    distinctio minus velit.</p>
+            <section id="bottom-container" aria-label="table of cities">
+                <h2>List of Cities, Population, and Temp.</h2>
+                <table class="sheetjs">
+                    <thead>
+                        <tr>
+                            <th>Island</th>
+                            <th>Capital</th>
+                            <th>Population</th>
+                            <th>Avg<br>Temp Jan</th>
+                            <th>Avg<br>Temp July</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Corfu" target="_blank" class="wik-link">Corfu</a>
+                            </td>
+                            <td><a href="https://en.wikipedia.org/wiki/Corfu_(city)" target="_blank"
+                                    class="wik-link">Corfu</a> </td>
+                            <td>102,071</td>
+                            <td>57.0&deg;F</td>
+                            <td>87.6&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Zakynthos" target="_blank"
+                                    class="wik-link">Zakynthos</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Zakynthos_(city)" target="_blank"
+                                    class="wik-link">Zakynthos</a></td>
+                            <td>40,759</td>
+                            <td>57.9&deg;F</td>
+                            <td>87.3&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Cephalonia" target="_blank"
+                                    class="wik-link">Kefalonia</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Argostoli" target="_blank"
+                                    class="wik-link">Argostoli</a></td>
+                            <td>35,801</td>
+                            <td>57.7&deg;F</td>
+                            <td>85.1&deg;F</td>
+                        </tr>
+                        <tr>
+                            <td><a href="https://en.wikipedia.org/wiki/Lefkada" target="_blank"
+                                    class="wik-link">Lefkada</a></td>
+                            <td><a href="https://en.wikipedia.org/wiki/Lefkada_(city)" target="_blank"
+                                    class="wik-link">Lefkada</a></td>
+                            <td>3,231</td>
+                            <td>57.0&deg;F</td>
+                            <td>87.0&deg;F</td>
+                        </tr>
+                    </tbody>
+                </table>
 
 
             </section>
@@ -186,9 +249,8 @@
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/jquery.YACSSTooltip.min.js"></script>
     <script src="js/jquery.backtothetop.min.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/accordion.js"></script>
-    <script src="js/function.js"></script>
+    <script src="js/jquery.sheetjs.js"></script>
+
 </body>
 
 </html>
