@@ -530,5 +530,8 @@ footer {
         text-align: left;
     }
 
+    table {
+        width: 90vw;
+    }
 
 }

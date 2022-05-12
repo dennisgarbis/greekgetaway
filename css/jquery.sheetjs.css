@@ -319,10 +319,11 @@ table.sheetjs>caption>table.hoverhead>thead>tr>th {
 		padding: 7px 2px;
 		font-size: .7rem;
 	}
+
 	table.sheetjs>thead>tr>td,
-table.sheetjs>tbody>tr>td,
-table.sheetjs>tfoot>tr>td {
-	padding: .4rem .3rem;
-	font-size: .7rem;
-}
+	table.sheetjs>tbody>tr>td,
+	table.sheetjs>tfoot>tr>td {
+		padding: .4rem .3rem;
+		font-size: .7rem;
+	}
 }
