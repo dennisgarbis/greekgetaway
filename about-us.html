@@ -14,6 +14,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/about-us.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <title>About Us | Greek Getaway</title>
 </head>
 
@@ -61,6 +62,7 @@
                     basically know as much about Greece as anyone. Hopefully we have convinced you that Greece is a
                     great place to visit. If there is anything you would like to know, and isn't answered below, please
                     visit our contact us page to fill out the form.</p>
+                    <p class="about-p">We have also started a list to help you out gather everything you might need for your trip. Add to it as you'd like, remove what we already have, it's up to you. We have included it to get you started.</p>
                 <hr class="hrd">
             </section>
             <section class="faq" id="faq" aria-label="frequently asked questions">
@@ -430,6 +432,23 @@
                     </div>
                 </div>
             </section>
+            <section id="bring" aria-label="things to bring">
+                <h2>Make Sure You Have Everything</h2>
+                <p class="bring-p">Here's a list we started to remind you what to bring with you. <br>Add to it as you see fit</p>
+
+                <div id="todo-list-example">
+                    <form v-on:submit.prevent="addNewTodo">
+                        <label for="new-todo">Add to list:</label>
+                        <input v-model="newTodoText" id="new-todo" placeholder="Ex: Bring girlfriend">
+                        <button id="add">Add</button>
+                    </form>
+                    <ul>
+                        <li is="todo-item" v-for="(todo, index) in todos" v-bind:key="todo.id" v-bind:title="todo.title"
+                            v-on:remove="todos.splice(index, 1)"></li>
+                    </ul>
+                </div>
+            </section>
+
         </main>
         <footer aria-label="contentinfo">
             <div class="foot-info">
@@ -457,6 +476,7 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"
         integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
     <script src="js/accordion.js"></script>
+    <script src="js/list.js"></script>
 </body>
 
 </html>

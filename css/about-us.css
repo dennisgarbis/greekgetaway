@@ -32,7 +32,7 @@ hr {
     background-color: lightskyblue;
 }
 
-h2 {
+#top-container > h2, .faq > h2, #bring > h2 {
     font-size: 1.8rem;
     margin: 0 auto 2rem;
     width: fit-content;
@@ -122,6 +122,107 @@ h2 {
     margin: 10px 0px;
 }
 
+
+
+
+
+
+
+
+
+
+
+
+#bring {
+    padding: 3rem 0;
+}
+
+#bring>h2 {
+    margin-bottom: 1rem;
+}
+
+.bring-p {
+    width: 50%;
+    margin: 0 auto 2rem;
+}
+
+#todo-list-example label {
+    font-weight: bold;
+    margin-right: .9rem;
+}
+
+#todo-list-example input {
+    font-size: 1rem;
+}
+
+#add {
+    padding: .3rem .6rem;
+    border-radius: 10px;
+    background-color: white;
+    color: black;
+    margin-left: .5rem;
+}
+
+#add:hover {
+    background-color: darkblue;
+    cursor: pointer;
+    color: white;
+}
+
+#add:active {
+    background-color: rgba(0, 0, 139, 0.651);
+}
+
+#todo-list-example ul {
+    width: fit-content;
+    margin: 2rem auto;
+}
+
+#todo-list-example ul li {
+    padding-right: 10px;
+    margin: 10px auto;
+    text-align: left;
+}
+
+ul button {
+    background-color: white;
+    color: black;
+    cursor: pointer;
+    position: absolute;
+    right: 40vw;
+}
+
+ul button:hover {
+    background-color: darkred;
+    color: white;
+}
+
+
+
+
+
+
+#todo-list-example {
+    margin: 0 auto;
+    width: 30vw;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 footer {
     background-color: black;
     color: white;
@@ -139,6 +240,7 @@ footer {
         display: flex;
         justify-content: center;
     }
+
     .about-p {
         width: 85%;
         margin: 1rem auto;
@@ -199,5 +301,18 @@ footer {
         font-size: .9rem;
         background: lightskyblue;
         color: black;
+    }
+
+    .bring-p {
+        width: 85%;
+    }
+
+    #todo-list-example {
+        width: 80vw;
+    }
+
+    ul button {
+        position: absolute;
+        right: 20vw;
     }
 }
