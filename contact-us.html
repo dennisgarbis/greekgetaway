@@ -16,7 +16,7 @@
 
 <body>
     <div id="wrapper">
-        <nav>
+        <nav aria-label="banner">
             <a id="skip" href="#top-container">skip to content..</a>
             <div id="logo">
                 <a href="index.html"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
@@ -34,7 +34,7 @@
                         </ul>
                     </li>
                     <li><a href="#">About▾</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown" aria-label="submenu">
                             <li><a href="about-us.html">About-Us</a></li>
                             <li><a href="contact-us.html" id="active">Contact-Us</a></li>
                         </ul>
@@ -48,92 +48,86 @@
             <div class="contact-heading">
                 <h1>CONTACT<br>US</h1>
             </div>
-
         </header>
-        <section id="top-container">
-            <div class="contact-form">
-                <div class="flex">
-                    <form action="submit.html" method="GET" id="signup">
-                        <div class="form-input">
-                            <h2>Please fill out this form</h2>
+        <main>
+            <section id="top-container" aria-label="form">
+                <div class="contact-form">
+                    <div class="flex">
+                        <form action="submit.html" method="GET" id="signup">
+                            <div class="form-input">
+                                <h2>Please fill out this form</h2>
 
-                            <div>
-                                <div class="names">
-                                    <div class="first-name">
-                                        <label for="fname">First Name: <span class="star">*</span></label>
-                                        <input type="text" name="fname" id="fname" required>
+                                <div>
+                                    <div class="names">
+                                        <div class="first-name">
+                                            <label for="fname">First Name: <span class="star">*</span></label>
+                                            <input type="text" name="fname" id="fname" required>
+                                        </div>
+                                        <div class="last-name">
+                                            <label for="lname">Last Name: <span class="star">*</span></label>
+                                            <input type="text" name="lname" id="lname" required> <br>
+                                        </div>
                                     </div>
-                                    <div class="last-name">
-                                        <label for="lname">Last Name: <span class="star">*</span></label>
-                                        <input type="text" name="lname" id="lname" required> <br>
+                                    <div class="names">
+                                        <div class="email-address">
+                                            <label for="email">Email: <span class="star">*</span></label>
+                                            <input type="email" name="email" id="email"
+                                                placeholder="ex: johndoe@aol.com" required>
+                                        </div>
+                                        <div>
+                                            <label for="confirm_email" class="label">Confirm Email: <span
+                                                    class="star">*</span></label>
+                                            <input name="confirm_email" type="text" id="confirm_email" class="required">
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="names">
-                                    <div class="email-address">
-                                        <label for="email">Email: <span class="star">*</span></label>
-                                        <input type="email" name="email" id="email" placeholder="ex: johndoe@aol.com" required>
+                                <div>
+                                    <div class="names">
+                                        <div class="phone-input">
+                                            <label for="phone" class="label">Phone: <span class="star">*</span></label>
+                                            <input name="phone" type="tel" id="phone" placeholder="ex: 5554448787"
+                                                required>
+                                        </div>
+                                        <div>
+                                            <label for="confirm_phone" class="label">Confirm Phone: <span
+                                                    class="star">*</span></label>
+                                            <input name="confirm_phone" type="tel" id="confirm_phone" class="required">
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset class="radio-quest" aria-label="group">
+                                    <h3>How would you like me to reach back? <span class="star">*</span></h3>
+                                    <div>
+                                        <input type="radio" name="response" id="email-resp" required>
+                                        <label for="email-resp">email</label>
                                     </div>
                                     <div>
-                                        <label for="confirm_email" class="label">Confirm Email: <span
-                                                class="star">*</span></label>
-                                        <input name="confirm_email" type="text" id="confirm_email" class="required">
-                                    </div>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="names">
-                                    <div class="phone-input">
-                                        <label for="phone" class="label">Phone: <span class="star">*</span></label>
-                                        <input name="phone" type="tel" id="phone" placeholder="ex: 5554448787" required>
+                                        <input type="radio" name="response" id="phone-resp">
+                                        <label for="phone-resp">phone</label>
                                     </div>
                                     <div>
-                                        <label for="confirm_phone" class="label">Confirm Phone: <span
-                                                class="star">*</span></label>
-                                        <input name="confirm_phone" type="tel" id="confirm_phone" class="required">
+                                        <input type="radio" name="response" id="no-resp">
+                                        <label for="no-resp">both!!</label>
+                                    </div>
+                                </fieldset>
+                                <div class="text">
+                                    <label class="message" for="message"> Comments:</label>
+                                    <textarea name="message" id="message" rows="5" placeholder="Message..."></textarea>
+                                </div>
+                                <p class="star-req">* denotes required</p>
+                                <div>
+                                    <div class="buttons">
+                                        <button class="btn" id="reset" type="reset" aria-label="reset">Reset</button>
+                                        <button class="btn" id="submit" type="submit"
+                                            aria-label="submit">Submit</button>
                                     </div>
                                 </div>
                             </div>
-                            <div class="radio-quest">
-                                <h3>How would you like me to reach back? <span class="star">*</span></h3>
-                                <div>
-                                    <input type="radio" name="response" id="email-resp" required>
-                                    <label for="email-resp">email</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="response" id="phone-resp">
-                                    <label for="phone-resp">phone</label>
-                                </div>
-                                <div>
-                                    <input type="radio" name="response" id="no-resp">
-                                    <label for="no-resp">both!!</label>
-                                </div>
-                            </div>
-                            <div class="text">
-                                <label class="message" for="message"> Comments:</label>
-                                <textarea name="message" id="message" rows="5" placeholder="Message..."></textarea>
-                            </div>
-                            <p class="star-req">* denotes required</p>
-                            <div>
-                                <div class="buttons">
-                                    <button class="btn" id="reset" type="reset" aria-label="reset">Reset</button>
-                                    <button class="btn" id="submit" type="submit" aria-label="submit">Submit</button>
-                                </div>
-                            </div>
-                        </div>
-                    </form>
-                </div> <!-- end of flex class -->
-
-
-            </div>
-        </section>
-
-
-
-
-
-
-
-
+                        </form>
+                    </div> <!-- end of flex class -->
+                </div>
+            </section>
+        </main>
         <footer>
             <p>&#169; 2022 WEB 235</p>
             <p> Dennis Garbis&#8482;</p>
