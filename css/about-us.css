@@ -32,7 +32,7 @@ hr {
     background-color: lightskyblue;
 }
 
-#top-container > h2, .faq > h2, #bring > h2 {
+#top-container>h2, .faq>h2, #bring>h2 {
     font-size: 1.8rem;
     margin: 0 auto 2rem;
     width: fit-content;
@@ -122,17 +122,6 @@ hr {
     margin: 10px 0px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
 #bring {
     padding: 3rem 0;
 }
@@ -197,36 +186,9 @@ ul button:hover {
     color: white;
 }
 
-
-
-
-
-
 #todo-list-example {
     margin: 0 auto;
     width: 30vw;
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
 }
 
 @media screen and (max-width: 600px) {
