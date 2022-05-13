@@ -178,25 +178,25 @@
             <div class="back-image"></div>
             <section id="bottom-container" aria-label="table of cities">
                 <h2>List of Cities, Population, and Temp.</h2>
-                <table class="sheetjs" role="onclick">
-                    <thead>
-                        <tr>
-                            <th role="ondoubleclick">City</th>
-                            <th>Region</th>
-                            <th>Population</th>
-                            <th>Avg<br>Temp Jan</th>
-                            <th>Avg<br>Temp July</th>
+                <table class="sheetjs" role="table">
+                    <thead role="rowgroup">
+                        <tr role="row">
+                            <th role="columnheader" aria-sort="descending">City</th>
+                            <th role="columnheader" aria-sort="descending">Region</th>
+                            <th role="columnheader" aria-sort="descending">Population</th>
+                            <th role="columnheader"aria-sort="descending">Avg<br>Temp Jan</th>
+                            <th  role="columnheader" aria-sort="descending">Avg<br>Temp July</th>
                         </tr>
                     </thead>
-                    <tbody>
-                        <tr>
-                            <td><a href="https://en.wikipedia.org/wiki/Athens" target="_blank"
+                    <tbody role="rowgroup">
+                        <tr role="row">
+                            <td role="cell"><a href="https://en.wikipedia.org/wiki/Athens" target="_blank"
                                     class="wik-link">Athens</a></td>
-                            <td><a href="https://en.wikipedia.org/wiki/Attica_(region)" target="_blank"
+                            <td role="cell"><a href="https://en.wikipedia.org/wiki/Attica_(region)" target="_blank"
                                     class="wik-link">Attica</a> </td>
-                            <td>664,046</td>
-                            <td>55.9&deg;F</td>
-                            <td>93.7&deg;F</td>
+                            <td role="cell">664,046</td>
+                            <td role="cell">55.9&deg;F</td>
+                            <td role="cell">93.7&deg;F</td>
                         </tr>
                         <tr>
                             <td><a href="https://en.wikipedia.org/wiki/Thessaloniki" target="_blank"
