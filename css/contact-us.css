@@ -15,6 +15,7 @@ form {
     width: 100%;
     margin: 0 auto;
     padding-top: 2rem;
+    background-color: #2760A5;
 }
 
 form>h2 {
@@ -82,7 +83,7 @@ input[type="radio"] {
     margin: 2rem 0;
 }
 
-.text > .message {
+.text>.message {
     width: fit-content;
 }
 
