@@ -92,6 +92,8 @@ hr {
 
 .accordionItemHeading h4 {
     color: #053756;
+    background-color: rgb(99, 192, 249);
+    padding: 2rem;
     font-size: 1.3rem;
     transition: all 0.5s ease;
     line-height: 24px;
@@ -99,6 +101,7 @@ hr {
     margin: 1rem .2rem;
     cursor: pointer;
     text-align: left;
+    margin-right: 10vw;
 }
 
 .question {
@@ -245,13 +248,16 @@ ul button:hover {
 
     .accordionItemHeading h4 {
         color: #053756;
-        font-size: 1.1rem;
+        background-color: rgb(99, 192, 249);
+        padding: 2rem;
+        font-size: 1.3rem;
         transition: all 0.5s ease;
         line-height: 24px;
         font-weight: 400;
         margin: 1rem .2rem;
         cursor: pointer;
         text-align: left;
+        margin-right: 8vw;
     }
 
     .quest .answer {
