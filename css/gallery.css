@@ -59,7 +59,6 @@ section {
     background-color: lightskyblue;
 }
 
-
 .gallery .row {
     justify-content: center;
 }
@@ -580,7 +579,6 @@ figure>img {
     }
 }
 
-
 footer {
     background-color: black;
     color: white;
@@ -602,6 +600,5 @@ footer {
     .intro-p {
         width: 85%;
     }
-    
 }
 

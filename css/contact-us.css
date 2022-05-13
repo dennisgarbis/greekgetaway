@@ -83,6 +83,12 @@ input[type="radio"] {
     margin: 2rem 0;
 }
 
+fieldset {
+    border: thin solid white;
+    width: 50%;
+    margin: 0 auto;
+}
+
 .text>.message {
     width: fit-content;
 }
@@ -142,12 +148,6 @@ textarea {
     transform: scale(1.05);
 }
 
-
-
-
-
-
-
 #signup label.error {
     font-size: .9rem;
     color: rgb(232, 5, 5);
@@ -162,13 +162,11 @@ textarea {
     background: #f4d7d7;
 }
 
-
 footer {
     background-color: black;
     color: white;
     padding: 20px;
 }
-
 
 @media screen and (max-width: 600px) {
     #hero {
@@ -235,54 +233,4 @@ footer {
         display: flex;
         flex-direction: column;
     }
-
-}
-
-
-@media screen and (min-width: 799px) {}
-
-
-#nav-toggle {
-    position: relative;
-    left: .1rem;
-    top: .9rem;
-    cursor: pointer;
-}
-
-#nav-toggle span,
-#nav-toggle span:before,
-#nav-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: .3rem;
-    width: 2rem;
-    background: #ffffff;
-    position: absolute;
-    display: block;
-    content: '';
-    transition: all 300ms ease-in-out;
-}
-
-#nav-toggle span:before {
-    top: -.5rem;
-}
-
-#nav-toggle span:after {
-    bottom: -.5rem;
-}
-
-#nav-toggle.active span {
-    background-color: transparent;
-}
-
-#nav-toggle.active span:before, #nav-toggle.active span:after {
-    top: 0;
-}
-
-#nav-toggle.active span:before {
-    transform: rotate(45deg);
-}
-
-#nav-toggle.active span:after {
-    transform: rotate(-45deg);
 }

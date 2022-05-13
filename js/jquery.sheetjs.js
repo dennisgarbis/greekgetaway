@@ -332,7 +332,7 @@
 				caption = $('<caption></caption>');
 				table.append(caption);
 			}
-			ctrlBoxHeader.append([ctrlAZHeader, ctrlZAHeader,ctrlCopyHeader, ctrlSumHeader, ctrlFilterHeader, ctrlClearFilterHeader]);
+			ctrlBoxHeader.append([ctrlAZHeader, ctrlZAHeader]);
 			ctrlBox.append([ctrlCopy, ctrlSum]);
 			if(!isHeadless) ctrlBox.append([ctrlFilter, ctrlNotFilter, ctrlClearFilter]);
 			caption.append([rectLine1, rectLine2, rectLine3, rectLine4, copyLine1, copyLine2, copyLine3, copyLine4, ctrlBoxHeader, ctrlBox]);
@@ -387,15 +387,6 @@
 			//
 			// Setup event actions
 			//
-	
-			// SearchFilter
-			ctrlFilterHeader.on('click', function(event) {
-				// Cancel original event not to hide the menu
-				if(event.preventDefault) event.preventDefault(); //support for IE7
-				if(event.stopPropagation) event.stopPropagation(); //support for IE7
-				event.returnValue = false;
-				return false;
-			});
 	
 			// Fuzzy text search
 			searchFilter.on('change keypress', function(event) {

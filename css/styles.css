@@ -49,6 +49,10 @@ h2 {
     margin-bottom: .1rem;
 }
 
+iframe {
+    border: none;
+}
+
 .sub-p {
     font-style: italic;
     margin-bottom: 1rem;
@@ -176,7 +180,6 @@ h2 {
     justify-content: center;
 }
 
-
 #testimonials {
     padding: 2rem 0 5rem;
     background-color: #073161;
@@ -193,7 +196,6 @@ footer {
         margin: 10px;
         width: 40%;
     }
-
 }
 
 @media screen and (max-width: 600px) {

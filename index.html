@@ -21,15 +21,16 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <title>Greek Getaway</title>
+    <title>Homepage | Greek Getaway</title>
 </head>
 
 <body>
     <div id="wrapper">
-        <nav>
+        <nav aria-label="navigation">
             <a id="skip" href="#intro">skip to content..</a>
             <div id="logo">
-                <a href="index.html" aria-describedby="logo"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
+                <a href="index.html" aria-describedby="logo"><img src="images/greek-logo-3.png"
+                        alt="greek getaway logo"></a>
             </div>
             <div class="nav-bar">
                 <ul class="nav-links">
@@ -52,7 +53,7 @@
                 </ul>
             </div>
         </nav>
-        <header id="hero">
+        <header id="hero" aria-label="banner">
             <!-- flex item (only one)-->
             <div class="contact-heading">
                 <h1>GREEK<br>GETAWAY</h1>
@@ -60,7 +61,7 @@
             </div>
         </header>
         <main>
-            <section id="intro">
+            <section id="intro" aria-label="introduction">
                 <div id="intro-left">
                     <div id="about-map">
                         <h2>Greece</h2>
@@ -80,8 +81,7 @@
 
                     <div id="highlights">
                         <iframe class="greek-vid" src="https://www.youtube.com/embed/RSRKFAmfqnI"
-                            title="YouTube video player" frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                     </div>
                 </div>
@@ -95,7 +95,7 @@
             <div class="back-image">
                 <!-- <h2 class="image-head">So Much to See</h2> -->
             </div>
-            <section id="tour-list">
+            <section id="tour-list" aria-label="where to visit">
                 <h2>Places to See</h2>
                 <p>Stay on the mainland and you'll get to see some very ancient and historic sites. Big cities like
                     Athens, or Thessaloniki, have every thing historical buffs are looking for. Head south to
@@ -147,7 +147,7 @@
             <div class="back-image2">
                 <!-- <h2 class="image-head">So Much to See</h2> -->
             </div>
-            <section id="testimonials">
+            <section id="testimonials" aria-label="testimonials">
                 <div class="membership-include-container">
                     <h2>What Customers Have Said About Us</h2>
                     <p><em>Hover over to pause</em></p> <br>
@@ -234,10 +234,7 @@
                                 <div class="image">
                                     <div><img src="img/beard2.jpg" class="user-photo" alt="dennis"></div>
                                     <div>
-                                        <p class="text">"Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos
-                                            accusantium adipisci voluptatum earum reiciendis asperiores tenetur, dolorum
-                                            animi omnis qui, deleniti reprehenderit, commodi ad! Excepturi voluptate sed
-                                            odit esse nemo!"</p><br>
+                                        <p class="text">"This was the best trip I have ever taken. Whoever started this business knows eactly what they're doing. Absolutely brilliant idea. Can't wait to go back!!</p><br>
                                         <div class="author">Dennis Garbis - <strong>The Beard</strong></div>
                                     </div>
                                 </div>
@@ -248,9 +245,26 @@
                 </div>
             </section>
         </main>
-        <footer>
-            <p>&#169; 2022 WEB 235</p>
-            <p> Dennis Garbis&#8482;</p>
+        <footer aria-label="contentinfo">
+            <div class="foot-info">
+                <h3>Who We Are:</h3>
+                <ul class="foot-links">
+                    <li><a href="about-us.html#top-container">about us</a></li>
+                    <li><a href="contact-us.html#form">contact us</a></li>
+                    <li><a href="about-us.html#faq">faq</a></li>
+                </ul>
+            </div>
+            <div class="foot-info">
+                &#169; 2022 WEB 235 <br> Dennis Garbis&#8482;
+            </div>
+            <div class="foot-info">
+                <h3>Contact Info :</h3>
+                <ul class="foot-links">
+                    <li><a href="mailto:greekgetaway@fakeemail.com">GG@getaway.com</a></li>
+                    <li><a href="tel:18005882300">1-800-588-2300 (US)</a></li>
+                    <li><a href="tel:+302058675309">+30-205-867-5309 (GR)</a></li>
+                </ul>
+            </div>
         </footer>
     </div><!-- end of wrapper -->
     <!-- jQuery -->

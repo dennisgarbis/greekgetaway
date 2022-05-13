@@ -16,11 +16,10 @@ html {
     margin-left: auto;
 }
 
-
 #skip {
     position: absolute;
-    color: #000;
-    background-color: lightskyblue;
+    color: rgb(255, 255, 255);
+    background-color: rgb(103, 0, 0);
     text-decoration: none;
     padding: .3rem .8rem;
     border-radius: 15px;
@@ -40,13 +39,11 @@ html {
     background-color: darkblue;
     color: white;
     transform: translateY(250%);
-
 }
 
 #skip:active {
     text-decoration: none;
     background-color: white;
-    transform: scaleY(5px);
     color: black;
 }
 
@@ -54,7 +51,6 @@ nav {
     display: flex;
     margin-top: 5vh;
     background-color: rgba(135, 206, 250, 0.96);
-    position: -webkit-sticky;
     position: sticky;
     top: 0;
     align-items: center;
@@ -109,15 +105,6 @@ nav li a:hover {
     color: darkblue;
 }
 
-/* dropdown-nav starts here */
-
-li a:focus-within {
-    background-color: #fff;
-    border-radius: 30px;
-    color: darkblue;
-    outline: none;
-}
-
 li {
     text-align: left;
 }
@@ -153,8 +140,6 @@ ul li ul:hover {
 ul li ul li {
     padding: 1rem 0;
 }
-
-/* dropdown nav ends here */
 
 #active {
     background-color: rgb(22, 56, 209);
@@ -234,7 +219,6 @@ ul li ul li {
 
 #hero-button:hover {
     background-color: darkblue;
-    border: thin solid darkblue;
     color: white;
     box-shadow: 3px 3px 10px rgb(0, 0, 0);
 }
@@ -381,20 +365,53 @@ h2 {
     margin: 1rem auto;
 }
 
-
 table {
     margin: 0 auto;
     width: 50vw;
 }
 
-
-
 footer {
-    background-color: black;
-    color: white;
-    padding: 20px;
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 1.2rem;
+    text-align: center;
+    align-items: flex-end;
+    justify-content: space-evenly;
 }
 
+.foot-info {
+    margin: 0 auto;
+    align-items: end;
+}
+
+.foot-links {
+    text-align: left;
+}
+
+footer h3 {
+    text-align: left;
+    color: lightskyblue;
+}
+
+.foot-links>li {
+    list-style-type: none;
+    padding: .3rem 0;
+}
+
+.foot-links>li>a {
+    text-decoration: none;
+    color: white;
+}
+
+.foot-links a:hover {
+    color: blue;
+}
+
+.foot-links a:active {
+    color: green;
+    font-weight: bold;
+}
 
 @media screen and (max-width: 600px) {
     #skip {
@@ -539,4 +556,21 @@ footer {
         width: 90vw;
     }
 
+    footer {
+        font-size: .8rem;
+    }
+
+    .foot-info {
+        justify-content: space-evenly;
+    }
+
+    .foot-links {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .foot-links>li {
+        padding: .2rem 0;
+    }
 }

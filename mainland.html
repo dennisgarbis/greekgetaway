@@ -12,16 +12,15 @@
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
     <link rel="stylesheet" href="css/jquery.sheetjs.css">
     <link rel="stylesheet" href="css/nav.css">
     <link rel="stylesheet" href="css/mainland.css">
-    <title>Mainland</title>
+    <title>Mainland | Greek Getaway</title>
 </head>
 
 <body>
     <div id="wrapper">
-        <nav>
+        <nav aria-label="navigation">
             <a id="skip" href="#top-container">skip to content..</a>
             <div id="logo">
                 <a href="index.html"><img src="images/greek-logo-3.png" alt="greek getaway logo"></a>
@@ -39,7 +38,7 @@
                         </ul>
                     </li>
                     <li><a href="#">About▾</a>
-                        <ul class="dropdown">
+                        <ul class="dropdown" aria-label="submenu">
                             <li><a href="about-us.html">About-Us</a></li>
                             <li><a href="contact-us.html">Contact-Us</a></li>
                         </ul>
@@ -55,7 +54,7 @@
             </div>
         </header>
         <main>
-            <section id="top-container">
+            <section id="top-container" aria-label="introduction">
                 <h2>Mainland and Northern Greece</h2>
                 <p>The mainland of Greece consists of central and northern Greece. It is a rugged area filled with
                     mountains, but with plenty of small villages and towns to visit.</p>
@@ -256,19 +255,28 @@
                         </tr>
                     </tbody>
                 </table>
-
-
             </section>
-
-
-
-
-
-
         </main>
         <footer aria-label="contentinfo">
-            <p>&#169; 2022 WEB 235</p>
-            <p> Dennis Garbis&#8482;</p>
+            <div class="foot-info">
+                <h3>Who We Are:</h3>
+                <ul class="foot-links">
+                    <li><a href="about-us.html#top-container">about us</a></li>
+                    <li><a href="contact-us.html#form">contact us</a></li>
+                    <li><a href="about-us.html#faq">faq</a></li>
+                </ul>
+            </div>
+            <div class="foot-info">
+                &#169; 2022 WEB 235 <br> Dennis Garbis&#8482;
+            </div>
+            <div class="foot-info">
+                <h3>Contact Info :</h3>
+                <ul class="foot-links">
+                    <li><a href="mailto:greekgetaway@fakeemail.com">GG@getaway.com</a></li>
+                    <li><a href="tel:18005882300">1-800-588-2300 (US)</a></li>
+                    <li><a href="tel:+302058675309">+30-205-867-5309 (GR)</a></li>
+                </ul>
+            </div>
         </footer>
     </div><!-- end of wrapper -->
     <!-- jQuery -->
