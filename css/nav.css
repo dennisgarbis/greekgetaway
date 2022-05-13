@@ -389,9 +389,11 @@ footer {
     text-align: left;
 }
 
-footer h3 {
+footer h2 {
+    font-size: 1.2rem;
     text-align: left;
     color: lightskyblue;
+    margin: 0%;    
 }
 
 .foot-links>li {
@@ -560,6 +562,11 @@ footer h3 {
         font-size: .8rem;
     }
 
+    footer h2 {
+        font-size: 1.1rem;
+        width: fit-content;
+    }
+    
     .foot-info {
         justify-content: space-evenly;
     }
