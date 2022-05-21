@@ -600,5 +600,17 @@ footer {
     .intro-p {
         width: 85%;
     }
+
+    .gallery figure img:hover {
+        transform: none;
+        object-fit:inherit;
+        transition: none;
+        opacity: 1;
+    }
+    
+    .gallery figure:hover .caption {
+        background-color: none;
+        opacity: 1;
+    }
 }
 

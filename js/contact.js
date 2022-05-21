@@ -54,7 +54,7 @@ $(document).ready(function () {
     }, // end messages
     errorPlacement: function (error, element) {
       if (element.is(":radio") || element.is(":checkbox")) {
-        error.appendTo(element.parent());
+        error.prependTo(element.parent());
       } else {
         error.insertAfter(element);
       }

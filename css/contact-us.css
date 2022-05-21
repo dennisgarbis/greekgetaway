@@ -215,6 +215,10 @@ footer {
         margin: 0;
     }
 
+    fieldset {
+        width: 85%;
+    }
+
     .radio-quest>h3 {
         width: 100%;
         font-size: 1rem;
