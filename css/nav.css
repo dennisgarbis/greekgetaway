@@ -245,20 +245,19 @@ h2 {
 }
 
 #backtothetop-fixed {
-    padding: 1.25rem;
+    padding: .25rem;
     border: 0;
     border-radius: 20px;
     background-color: rgba(0, 0, 139, 0.75);
     color: #fff;
     cursor: pointer;
     text-decoration: none;
-    margin-right: 5vw;
+    transition-duration: .25s;
 }
 
 #backtothetop-fixed:hover {
     background-color: darkblue;
     transform: translate(0%, 0%) scale(1.1);
-    transition-duration: .4s;
     transition-timing-function: ease-in-out;
     transition-delay: 0s;
 }
@@ -393,7 +392,7 @@ footer h2 {
     font-size: 1.2rem;
     text-align: left;
     color: lightskyblue;
-    margin: 0%;    
+    margin: 0%;
 }
 
 .foot-links>li {
@@ -566,7 +565,7 @@ footer h2 {
         font-size: 1.1rem;
         width: fit-content;
     }
-    
+
     .foot-info {
         justify-content: space-evenly;
     }
